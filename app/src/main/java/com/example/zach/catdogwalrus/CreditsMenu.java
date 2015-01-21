@@ -10,18 +10,16 @@ import android.view.View;
 import android.content.Intent;
 
 
-public class ChapterMenu extends ActionBarActivity implements OnClickListener{
+public class CreditsMenu extends ActionBarActivity implements OnClickListener{
 
-    private Button chapter_1_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chapter_selection);
+        setContentView(R.layout.credits);
 
         // CONNECT BUTTONS TO LAYOUT AND LISTENERS
-        chapter_1_button = (Button) findViewById(R.id.Chapter1Button);
-        chapter_1_button.setOnClickListener(this);
+
     }
 
 
@@ -50,12 +48,7 @@ public class ChapterMenu extends ActionBarActivity implements OnClickListener{
     @Override
     public void onClick(View v)
     {
-        if (v == chapter_1_button)
-        {
-            Intent tochapter1= new Intent(v.getContext(), Chapter1.class);
-            startActivity(tochapter1);
-
-        }
+  
 
     }
 }

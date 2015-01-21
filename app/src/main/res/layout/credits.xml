@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
      android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/customgradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.zach.catdogwalrus.ChapterMenu">
 
 
 <TextView
-    android:id="@+id/CreditsString"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="credits n stuff"
+    android:text="Developed by:"
+    android:id="@+id/Developed"
     android:textSize="20sp"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
 
 />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Madeline Richards"
+        android:id="@+id/Maddie"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Developed"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andrew Kusel"
+        android:id="@+id/Andrew"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@+id/Zach"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zachary Ivanac"
+        android:id="@+id/Zach"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Maddie"
+
+        />
 </RelativeLayout>

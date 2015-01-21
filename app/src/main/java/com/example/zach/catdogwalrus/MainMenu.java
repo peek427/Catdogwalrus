@@ -59,12 +59,13 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
     {
         if (v == credits_button)
         {
-            Intent tocredits = new Intent(v.getContext(), ChapterMenu.class);
+            Intent tocredits = new Intent(v.getContext(), CreditsMenu.class);
             startActivity(tocredits);
         }
         else if (v == chapterselect_button)
         {
             Intent tochapterselect = new Intent(v.getContext(), ChapterMenu.class);
+            startActivity(tochapterselect);
         }
     }
 }

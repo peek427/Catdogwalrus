@@ -20,6 +20,10 @@
             android:name=".ChapterMenu"
             android:label="@string/title_activity_chapter_menu" >
         </activity>
+        <activity android:name=".Chapter1"
+            android:label="Chapter1"/>
+        <activity android:name=".CreditsMenu"
+            android:label="CreditsMenu"/>
     </application>
 
 </manifest>
