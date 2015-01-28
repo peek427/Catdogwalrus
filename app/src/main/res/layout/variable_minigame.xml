@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/LinearLayoutForVariableBoxes">
+
+
+<ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:id="@+id/Box1"
+    android:src="@drawable/bool_box"
+    />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/Box2"
+        android:src="@drawable/string_box"
+        />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/Box3"
+        android:src="@drawable/char_box"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/Box4"
+        android:src="@drawable/int_box"
+        />
+
+    <ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:id="@+id/Box5"
+    android:src="@drawable/double_box"
+    />
+
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VariableGameString"
+        android:layout_centerHorizontal="true"
+        android:text="placeholder"
+        android:layout_above="@id/LinearLayoutForVariableBoxes"
+        android:layout_marginBottom="80dp"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VariableGameTimer"
+        android:text="30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"/>
+
+    <fragment
+        android:name="com.example.zach.catdogwalrus.Minigame_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/minigame_fragment_layout" />
+</RelativeLayout>
