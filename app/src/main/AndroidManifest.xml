@@ -27,6 +27,9 @@
         <activity android:name=".VariableMinigame"
             android:label="VariableMinigame"
             android:screenOrientation="landscape"/>
+        <activity android:name=".Lesson1_1"
+            android:label="Lesson1_1"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
