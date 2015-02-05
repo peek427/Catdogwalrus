@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_fragment"
+        android:background="@drawable/bubble_white_normal"
         android:id="@+id/lessonText"
-        android:layout_gravity="center_horizontal"/>
-</LinearLayout>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:id="@+id/next_button"
+        android:layout_marginBottom="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/lessonText"
+        android:layout_toEndOf="@+id/lessonText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button"
+        android:id="@+id/back_button"
+        android:layout_alignTop="@+id/next_button"
+        android:layout_toLeftOf="@+id/lessonText"
+        android:layout_toStartOf="@+id/lessonText" />
+</RelativeLayout>

@@ -8,5 +8,15 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_fragment">Lesson text fragment</string>
     <string name="code_fragment">Source code fragment</string>
+    <string name="next_button">Next</string>
+    <string name="back_button">Back</string>
+    <string name="Hello_world_test">
+    #include &#60;iostream&#62; \n\n
+    int main()\n
+    {\n
+	    std::cout &#60;&#60; "Hello World!&#92;n";\n
+	    return 0;\n
+    }
+    </string>
 
 </resources>

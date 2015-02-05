@@ -16,14 +16,14 @@
 
         <fragment android:name="com.example.zach.catdogwalrus.LessonTextFragment"
             android:id="@+id/lesson_text_fragment"
-            android:layout_width="158dp"
+            android:layout_width="330dp"
             android:layout_height="match_parent"
             tools:layout="@layout/lesson_text" />
 
         <fragment android:name="com.example.zach.catdogwalrus.LessonCodeFragment"
             android:id="@+id/lesson_code_fragment"
-            android:layout_width="187dp"
-            android:layout_height="match_parent"
+            android:layout_width="189dp"
+            android:layout_height="519dp"
             tools:layout="@layout/lesson_code" />
 
     </LinearLayout>
