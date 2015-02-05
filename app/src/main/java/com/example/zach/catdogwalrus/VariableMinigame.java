@@ -190,7 +190,7 @@ public class VariableMinigame extends Minigame {
         //listener that handles things being dragged onto the boxes
 
         public boolean onDrag(View v, DragEvent d)
-        // v is the box being dropped on to
+        // v is the box being dropped on to.
         {
             ImageView box = (ImageView) v;
             TextView var = (TextView) d.getLocalState(); // var holds the actual textview
@@ -206,7 +206,7 @@ public class VariableMinigame extends Minigame {
                         thevariable.setText(thebucket.stringmap.get(thebucket.CurrentString)); // update the variable in the layout
 
                         //FUTURE: Make (customized) toasts that pop up with +100 or -50 each time
-                    } else // WRONG BUCKET CASE
+                    } else // WRONG BUCKET CASE.
                     {
                         Score -= 50; // subtract from score
                         if (Score < 0)
