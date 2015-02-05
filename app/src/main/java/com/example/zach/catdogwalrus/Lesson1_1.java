@@ -1,29 +1,18 @@
 package com.example.zach.catdogwalrus;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.view.View;
-import android.content.Intent;
 
 
-public class Chapter1 extends ActionBarActivity implements OnClickListener{
-
-    private Button lesson_1_button;
+public class Lesson1_1 extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chapter_1);
-
-        // CONNECT BUTTONS TO LAYOUT AND LISTENERS
-        lesson_1_button = (Button) findViewById(R.id.Lesson1Button);
-        lesson_1_button.setOnClickListener(this);
+        setContentView(R.layout.lesson_layout);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,16 +35,7 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
 
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
-    public void onClick(View v)
-    {
-        if (v == lesson_1_button)
-        {
-          // go to lesson 1
-            Intent to_lesson_1= new Intent(v.getContext(), Lesson1_1.class);
-            startActivity(to_lesson_1);
-        }
-
-    }
 }
+
+
+
