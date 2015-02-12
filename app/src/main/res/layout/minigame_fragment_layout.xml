@@ -10,6 +10,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="40dp"
         android:layout_marginTop="10dp"
+        android:textSize="24sp"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +18,8 @@
         android:id="@+id/Score"
         android:layout_below="@id/ScoreHeader"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="40dp"/>
+        android:layout_marginRight="40dp"
+        android:textSize="30sp"/>
 
     <Button
         android:layout_width="wrap_content"
