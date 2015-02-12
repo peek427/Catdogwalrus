@@ -59,8 +59,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/VariableGameString"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/LinearLayoutForVariableBoxes"
-        android:layout_marginBottom="80dp"
+        android:layout_below="@id/VariableGameTimer"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true"
+        android:text="herlo"
         android:textSize="24sp"
         />
 

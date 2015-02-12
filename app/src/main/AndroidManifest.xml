@@ -24,7 +24,7 @@
             android:label="Chapter1"/>
         <activity android:name=".CreditsMenu"
             android:label="CreditsMenu"/>
-        <activity android:name=".VariableMinigame" android:noHistory="true"/>
+        <activity android:name=".VariableMinigame" android:noHistory="true"
             android:label="VariableMinigame"
             android:screenOrientation="landscape"/>
         <activity android:name=".Lesson1_1"
