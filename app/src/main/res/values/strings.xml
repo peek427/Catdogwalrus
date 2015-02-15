@@ -10,6 +10,20 @@
     <string name="code_fragment">Source code fragment</string>
     <string name="next_button">Next</string>
     <string name="back_button">Back</string>
+
+    <!-- Strings for Lesson 1.1 -->
+    <string name="lesson1_1_1">
+        First part of the lesson.
+    </string>
+    <string name="lesson1_1_2">
+        After next button is pressed.
+    </string>
+    <string name="lesson1_1_3">
+        Last slide, game should be next
+    </string>
+
+    <!-- Strings for code, Lesson 1.1 -->
+
     <string name="Hello_world_test">
     #include &#60;iostream&#62; \n\n
     int main()\n

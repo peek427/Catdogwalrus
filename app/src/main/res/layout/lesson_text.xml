@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_fragment"
+        android:text="@string/lesson1_1_1"
         android:background="@drawable/bubble_white_normal"
         android:id="@+id/lessonText"
         android:layout_gravity="center_horizontal"
