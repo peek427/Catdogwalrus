@@ -13,8 +13,6 @@ public abstract class Minigame extends ActionBarActivity{
 
     protected void pushScore() // Pushes high score into the phone's memory.
     {
-        System.out.print("okay");
-        Context context = this;
         SharedPreferences  save = this.getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = save.edit();
         editor.putInt(getString(R.string.high_score), Score);
