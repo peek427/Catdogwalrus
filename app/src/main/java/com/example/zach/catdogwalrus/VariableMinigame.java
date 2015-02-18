@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.ClipData;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
 import android.support.v4.app.FragmentManager;
@@ -49,6 +50,8 @@ public class VariableMinigame extends Minigame {
 
     private TextView dialogscore;
     private TextView dialoghighscore;
+
+    private SharedPreferences save;
 
     private ImageView charbox, intbox, boolbox, stringbox, doublebox; // The imageviews representing the boxes to be dragged onto
 
@@ -140,6 +143,7 @@ public class VariableMinigame extends Minigame {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.variable_minigame);
 
+        save = this.getPreferences(Context.MODE_PRIVATE); // Connects the save to the save variable
 
 
         thevariable = (TextView) findViewById(R.id.VariableGameString); // Connect the "variable" textview to the layout
@@ -202,8 +206,15 @@ public class VariableMinigame extends Minigame {
                 // THIS CODE SEGMENT IS HOW YOU MAKE THE END-OF-GAME SCORE DIALOG BOX APPEAR
                 FragmentManager fm = getSupportFragmentManager();
                 Score_alert_fragment alertfragment = new Score_alert_fragment();
+
+                //Retrieve high score from preferences
+                if (save.getInt(getString(R.string.high_score), 0) < Score) // If the high score is less than the score
+                {
+                    pushScore();
+                }
+
                 alertfragment.y=Score; // value of score
-                alertfragment.h=0; // value of high score
+                alertfragment.h=save.getInt(getString(R.string.high_score), 0); // value of high score taken from save
                 alertfragment.show(fm, "scorefrag");
                 // END OF CODE SEGMENT ******************************************************************
 

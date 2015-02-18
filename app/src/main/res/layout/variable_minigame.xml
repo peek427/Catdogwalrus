@@ -54,6 +54,17 @@
 
 </LinearLayout>
 
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VariableGameTimer"
+        android:text="30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,15 +76,6 @@
         android:text="herlo"
         android:textSize="24sp"
         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/VariableGameTimer"
-        android:text="30"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:textSize="30sp"/>
 
     <fragment
         android:name="com.example.zach.catdogwalrus.Minigame_fragment"

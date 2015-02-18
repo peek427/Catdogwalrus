@@ -10,6 +10,7 @@
     <string name="code_fragment">Source code fragment</string>
     <string name="next_button">Next</string>
     <string name="back_button">Back</string>
+    <string name="high_score">catdogwalrushighscore</string>
     <string name="Hello_world_test">
     #include &#60;iostream&#62; \n\n
     int main()\n
