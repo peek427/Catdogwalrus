@@ -34,4 +34,68 @@
     }
     </string>
 
+    // Each code segment is surrounded by @ symbols. Load these into arrays. Periods, ?, !, indicate the end of a lesson segment.
+    <string name="lesson1_text">
+
+
+Let’s talk about variables.If you have ever taken a math class you have probably seen variables of some kind. Equations for example are made up of variables, letters that represent numbers you pick.$
+
+In programming you have variables just like this but instead of the variables only being used for numbers you can use them to represent almost anything!
+
+
+Int
+Double
+Char
+String
+Bool
+
+Int is used to represent an integer, which is a whole number.
+
+@
+int a, b;\n
+int c = 15;
+@
+
+Double is used when you want to represent a decimal value.
+
+@
+int a, b;\n
+int c = 15;\n
+double d = 10.2;
+@
+
+Char is used to represent a single character. This can be a letter or symbol from the keyboard. You use single quotes around the character to show it is a single character.
+
+@
+int a, b;
+int c = 15;
+double d = 10.2;
+char e = ‘e’;
+@
+
+Next we talk about string. String is how we show a series of characters that are connected.$ This is basically a strange way of saying a sentence. You can type inside of double quotes to indicate it is a string.
+
+@
+int a, b;
+int c = 15;
+double d = 10.2;
+char e = ‘E’;
+string f = “This string is cool!!! ”;
+@
+
+Finally, the last major type we have is a bool. This is short for the word boolean. This type of value holds either true or false.
+
+@
+int a;
+int c = 15;
+double d = 10.2;
+char e = ‘E’;
+string f = “This string is cool!!! ”;
+bool g = true;
+@
+
+Think you can match the data with the type of variable you need? Lets go!
+
+    </string>
+
 </resources>
