@@ -117,6 +117,10 @@
         bool g = true;\n
         }
     </string>
+    <string name="about_us">Thanks for checking out CATDOGWALRUS! This app is meant to
+        aid anyone who wants to learn how to program. We start from the ground up
+        using hands on games that could hopefully even teach your grandma the core concepts of
+        programming. Enjoy.</string>
 
 
 </resources>
