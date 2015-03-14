@@ -12,7 +12,7 @@ import android.content.Intent;
 
 public class Chapter1 extends ActionBarActivity implements OnClickListener{
 
-    private Button lesson_1_button;
+    private Button Ch1Les1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
         setContentView(R.layout.chapter_1);
 
         // CONNECT BUTTONS TO LAYOUT AND LISTENERS
-        lesson_1_button = (Button) findViewById(R.id.Lesson1Button);
-        lesson_1_button.setOnClickListener(this);
+        Ch1Les1 = (Button) findViewById(R.id.Ch1Les1);
+        Ch1Les1.setOnClickListener(this);
     }
 
 
@@ -50,7 +50,7 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
     @Override
     public void onClick(View v)
     {
-        if (v == lesson_1_button)
+        if (v == Ch1Les1)
         {
           // go to lesson 1
             Intent to_lesson_1= new Intent(v.getContext(), Lesson1_1.class);

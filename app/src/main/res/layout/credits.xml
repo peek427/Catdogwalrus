@@ -12,11 +12,12 @@
     android:layout_height="wrap_content"
     android:text="Developed by:"
     android:id="@+id/Developed"
-    android:textSize="20sp"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
+    android:textSize="25sp"
 
-/>
+    android:textColor="#ff3e6eff"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="81dp" />
 
 
     <TextView
@@ -25,10 +26,10 @@
         android:text="Madeline Richards"
         android:id="@+id/Maddie"
         android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Developed"
 
-        />
+        android:textColor="#ff75a4ff"
+        android:layout_below="@+id/Developed"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,11 +37,10 @@
         android:text="Andrew Kusel"
         android:id="@+id/Andrew"
         android:textSize="20sp"
-        android:layout_centerHorizontal="true"
 
+        android:textColor="#ff75a4ff"
         android:layout_below="@+id/Zach"
-
-        />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,8 +48,22 @@
         android:text="Zachary Ivanac"
         android:id="@+id/Zach"
         android:textSize="20sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/Maddie"
 
-        />
+        android:textColor="#ff75a4ff"
+        android:layout_below="@+id/Maddie"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text= "@string/about_us"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/AboutUs"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff5470ff"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
 </RelativeLayout>

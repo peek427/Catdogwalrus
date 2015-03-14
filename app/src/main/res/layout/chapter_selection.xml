@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/customgradient"
     tools:context="com.example.zach.catdogwalrus.ChapterMenu">
-    >
 
 <LinearLayout
     android:layout_width="wrap_content"
@@ -13,17 +12,54 @@
     android:orientation="vertical"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
-    >
-
-    <Button
-        android:id="@+id/Chapter1Button"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:text="Chapter 1"
-    />
+    android:id="@+id/linearLayout">
 
 </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="57dp">
+
+        <Button
+            android:id="@+id/Chapter2Button"
+
+            android:text="Chapter 2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+
+            android:layout_width="100dp"
+            android:layout_height="250dp"
+            android:background="@drawable/buttonshapeLocked"
+            android:layout_gravity="center|center_vertical" />
+
+        <Button
+            android:id="@+id/Chapter3Button"
+
+            android:text="Chapter 3"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+
+            android:layout_width="100dp"
+            android:layout_height="250dp"
+            android:background="@drawable/buttonshapeLocked"
+            android:layout_gravity="end|center_vertical" />
+
+        <Button
+            android:id="@+id/Chapter1Button"
+
+            android:text="Chapter 1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+
+            android:layout_width="100dp"
+            android:layout_height="250dp"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="start|center_vertical" />
+    </FrameLayout>
 
 </RelativeLayout>

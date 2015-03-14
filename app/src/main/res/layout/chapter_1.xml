@@ -11,17 +11,219 @@
         android:orientation="vertical"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        >
-
-        <Button
-            android:id="@+id/Lesson1Button"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textSize="20sp"
-            android:text="Lesson 1-1"
-            />
+        android:id="@+id/linearLayout2">
 
     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_marginEnd="305dp"
+        android:layout_marginRight="305dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="57dp"
+        android:layout_alignParentRight= "false"
+        android:id="@+id/frameLayout">
+
+        <Button
+            android:id="@+id/Ch1Les1"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbutton"
+            android:layout_gravity="start|top" />
+
+        <Button
+            android:id="@+id/Ch1Les2"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:id="@+id/Ch1Les3"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="end|top" />
+
+        <Button
+            android:id="@+id/Ch1Les7"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="start|center_vertical" />
+
+        <Button
+            android:id="@+id/Ch1Les8"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/Ch1Les9"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="end|center_vertical" />
+
+        <Button
+            android:id="@+id/Ch1Les13"
+            android:text="13"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="start|bottom" />
+
+        <Button
+            android:id="@+id/Ch1Les14"
+            android:text="14"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:id="@+id/Ch1Les15"
+            android:text="15"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="end|bottom" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginTop="57dp"
+        android:id="@+id/frameLayout2">
+
+        <Button
+            android:id="@+id/Ch1Les4"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="start|top" />
+
+        <Button
+            android:id="@+id/Ch1Les5"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:id="@+id/Ch1Les6"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="end|top" />
+
+        <Button
+            android:id="@+id/Ch1Les10"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="start|center_vertical" />
+
+        <Button
+            android:id="@+id/Ch1Les11"
+            android:text="11"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/Ch1Les12"
+            android:text="12"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="end|center_vertical" />
+
+        <Button
+            android:id="@+id/Ch1Les16"
+            android:text="16"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="start|bottom" />
+
+        <Button
+            android:id="@+id/Ch1Les17"
+            android:text="17"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            android:id="@+id/Ch1Les18"
+            android:text="18"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/lessonbuttonLocked"
+            android:layout_gravity="end|bottom" />
+    </FrameLayout>
+    />
 
 </RelativeLayout>
