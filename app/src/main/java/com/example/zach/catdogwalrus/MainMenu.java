@@ -19,6 +19,7 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
 
     private Button chapterselect_button;
     private Button credits_button;
+    private Button test_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
         chapterselect_button.setOnClickListener(this);
         credits_button = (Button) findViewById(R.id.CreditsButton);
         credits_button.setOnClickListener(this);
+        test_button = (Button) findViewById(R.id.TestButton);
+        test_button.setOnClickListener(this);
     }
 
 
@@ -55,17 +58,19 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
     }
 
     @Override
-    public void onClick(View v)
-    {
-        if (v == credits_button)
-        {
+    public void onClick(View v) {
+        if (v == credits_button) {
             Intent tocredits = new Intent(v.getContext(), CreditsMenu.class);
             startActivity(tocredits);
-        }
-        else if (v == chapterselect_button)
-        {
+        } else if (v == chapterselect_button) {
             Intent tochapterselect = new Intent(v.getContext(), ChapterMenu.class);
             startActivity(tochapterselect);
         }
+        // USED TO SHORTCUT JUMP TO ACITIVTY BEING TESTED. CURRENT: minigame 1
+        else if (v == test_button){
+            Intent totest = new Intent(v.getContext(), VariableMinigame.class);
+        startActivity(totest);
+    }
+
     }
 }

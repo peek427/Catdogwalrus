@@ -8,10 +8,115 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_fragment">Lesson text fragment</string>
     <string name="code_fragment">Source code fragment</string>
-    <string name="about_us">Thanks for checking out CATDOGWALRUS! This app is meant to
-        aid anyone who wants to learn how to program. We start from the ground up
-        using hands on games that could hopefully even teach your grandma the core concepts of
-        programming. Enjoy.</string>
+    <string name="next_button">Next</string>
+    <string name="back_button">Back</string>
+
+
+    <!-- Strings for code, Lesson 1.1 -->
+
+    <string name="high_score">catdogwalrushighscore</string>
+    <string name="Hello_world_test">
+    #include &#60;iostream&#62; \n\n
+    int main()\n
+    {\n
+	    std::cout &#60;&#60; "Hello World!&#92;n";\n
+	    return 0;\n
+    }
+    </string>
+
+    <!-- Lesson 1.1 Strings -->
+    // Each code segment is surrounded by @ symbols. Load these into arrays. Periods, ?, !, indicate the end of a lesson segment.
+    <string name="lesson1_1_1">
+        Let’s talk about variables.If you have ever taken a math class you have probably seen variables of some kind. Equations, for example, are made up of variables, or letters that represent numbers you pick.$
+        </string>
+    <string name="lesson1_1_2">
+        In programming you have variables just like this but instead of the variables only being used for numbers you can use them to represent almost anything!
+    </string>
+
+    <string name="lesson1_1_3">
+        The most common variable types are:\n
+    Int\n
+    Double\n
+    Char\n
+    String\n
+    Bool\n
+    </string>
+
+    <string name="lesson1_1_4">
+        Int is used to represent an integer, which is a whole number.
+    </string>
+
+    <string name="lesson1_1_5">
+        Double is used when you want to represent a decimal value.
+    </string>
+
+    <string name="lesson1_1_6">
+        Char is used to represent a single character. This can be a letter or symbol from the keyboard. You use single quotes around the character to show it is a single character.
+    </string>
+
+    <string name="lesson1_1_7">
+        Next we talk about string. String is how we show a series of characters that are connected. This is basically a strange way of saying a sentence. You can type inside of double quotes to indicate it is a string.
+    </string>
+
+    <string name="lesson1_1_8">
+        Finally, the last major type we have is a bool. This is short for the word boolean. This type of value holds either true or false.
+    </string>
+
+    <string name="lesson1_1_9">
+        Think you can match the data with the type of variable you need? Lets go!
+    </string>
+
+
+    <!-- Lesson 1.1 Code Strings -->
+    <string name = "code1_1_1">
+        int main()\n
+        {\n
+	    int a, b;\n
+	    int c = 15;\n
+        }
+    </string>
+
+    <string name = "code1_1_2">
+        int main()\n
+        {\n
+	    int a, b;\n
+        int c = 15;\n
+        double d = 10.2;\n
+        }
+    </string>
+
+    <string name = "code1_1_3">
+        int main()\n
+        {\n
+	    int a, b;\n
+        int c = 15;\n
+        double d = 10.2;\n
+        char e = ‘e’;\n
+        }
+    </string>
+
+    <string name = "code1_1_4">
+        int main()\n
+        {\n
+        int a, b;\n
+        int c = 15;\n
+        double d = 10.2;\n
+        char e = ‘E’;\n
+        string f = “This string is cool!!! ”;\n
+        }
+    </string>
+
+    <string name = "code1_1_5">
+        int main()\n
+        {\n
+        int a;\n
+        int c = 15;\n
+        double d = 10.2;\n
+        char e = ‘E’;\n
+        string f = “This string is cool!!! ”;\n
+        bool g = true;\n
+        }
+    </string>
 
 
 </resources>

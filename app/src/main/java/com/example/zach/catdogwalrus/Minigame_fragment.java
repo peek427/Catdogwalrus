@@ -15,7 +15,7 @@ public class Minigame_fragment extends Fragment {
 
 
     public Minigame_fragment() {
-        // Required empty public constructor
+        // Required empty public constructor.
     }
 
 

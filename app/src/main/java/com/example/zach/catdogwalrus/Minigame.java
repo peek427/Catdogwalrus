@@ -1,14 +1,21 @@
 package com.example.zach.catdogwalrus;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 
 
 /**
- * Created by Zach on 1/27/2015.
+ *  Created by Zach on 1/27/2015.
  */
 public abstract class Minigame extends ActionBarActivity{
 
-    private int Score;
+    protected int Score;
 
-    private void pushScore(int highscore) // Pushes high score into the phone's memory.
-    {}
+    protected void pushScore() // Pushes high score into the phone's memory.
+    {
+        SharedPreferences  save = this.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = save.edit();
+        editor.putInt(getString(R.string.high_score), Score);
+        editor.commit();
+    }
 }
