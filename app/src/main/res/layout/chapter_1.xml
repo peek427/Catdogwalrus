@@ -45,7 +45,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="center_horizontal|top" />
 
         <Button
@@ -55,7 +55,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|top" />
 
         <Button
@@ -65,7 +65,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="start|center_vertical" />
 
         <Button
@@ -75,7 +75,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="center" />
 
         <Button
@@ -85,7 +85,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|center_vertical" />
 
         <Button
@@ -95,7 +95,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="start|bottom" />
 
         <Button
@@ -105,7 +105,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="center_horizontal|bottom" />
 
         <Button
@@ -115,7 +115,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|bottom" />
 
 
@@ -141,7 +141,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="start|top" />
 
         <Button
@@ -151,7 +151,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="center_horizontal|top" />
 
         <Button
@@ -161,7 +161,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|top" />
 
         <Button
@@ -171,7 +171,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="start|center_vertical" />
 
         <Button
@@ -181,7 +181,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="center" />
 
         <Button
@@ -191,7 +191,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|center_vertical" />
 
         <Button
@@ -201,7 +201,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="start|bottom" />
 
         <Button
@@ -211,7 +211,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="center_horizontal|bottom" />
 
         <Button
@@ -221,7 +221,7 @@
             android:textSize="30sp"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:background="@drawable/lessonbuttonLocked"
+            android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|bottom" />
     </FrameLayout>
     />

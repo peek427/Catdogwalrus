@@ -34,7 +34,7 @@
 
             android:layout_width="100dp"
             android:layout_height="250dp"
-            android:background="@drawable/buttonshapeLocked"
+            android:background="@drawable/buttonshapelocked"
             android:layout_gravity="center|center_vertical" />
 
         <Button
@@ -46,7 +46,7 @@
 
             android:layout_width="100dp"
             android:layout_height="250dp"
-            android:background="@drawable/buttonshapeLocked"
+            android:background="@drawable/buttonshapelocked"
             android:layout_gravity="end|center_vertical" />
 
         <Button

@@ -55,6 +55,7 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
         }
 
         return super.onOptionsItemSelected(item);
+
     }
 
     @Override
@@ -66,11 +67,6 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
             Intent tochapterselect = new Intent(v.getContext(), ChapterMenu.class);
             startActivity(tochapterselect);
         }
-        // USED TO SHORTCUT JUMP TO ACITIVTY BEING TESTED. CURRENT: minigame 1
-        else if (v == test_button){
-            Intent totest = new Intent(v.getContext(), VariableMinigame.class);
-        startActivity(totest);
     }
 
     }
-}

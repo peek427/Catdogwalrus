@@ -36,7 +36,7 @@ import android.widget.Toast;
 /**
  * Created by Zach on 1/27/2015.
  */
-public class VariableMinigame extends Minigame {
+public class VariableMinigame extends Minigame implements OnClickListener{
 
     long starttime;
 
@@ -356,6 +356,22 @@ public class VariableMinigame extends Minigame {
 
     } // end of OnDragListener
 
+
+
+    @Override
+    public void onClick(View v) {
+      //  if (v == credits_button) {
+      //      Intent tocredits = new Intent(v.getContext(), CreditsMenu.class);
+      //      startActivity(tocredits);
+     //   } else if (v == chapterselect_button) {
+      //      Intent tochapterselect = new Intent(v.getContext(), ChapterMenu.class);
+      //      startActivity(tochapterselect);
+      //  }
+        // USED TO SHORTCUT JUMP TO ACITIVTY BEING TESTED. CURRENT: minigame 1
+     //   else if (v == test_button){
+     //       Intent totest = new Intent(v.getContext(), VariableMinigame.class);
+      //      startActivity(totest);
+       }
 
 
 } // end of entire class

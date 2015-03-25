@@ -48,14 +48,5 @@
         android:textSize="15sp"
         android:layout_marginTop="20dp"
         />
-    <Button
-        android:text="Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/TestButton"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textSize="20sp"
-        android:layout_below="@id/CreditsButton"
-        />
+
 </RelativeLayout>
