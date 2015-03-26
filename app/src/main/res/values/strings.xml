@@ -27,7 +27,7 @@
     <!-- Lesson 1.1 Strings -->
     // Each code segment is surrounded by @ symbols. Load these into arrays. Periods, ?, !, indicate the end of a lesson segment.
     <string name="lesson1_1_1">
-        Let’s talk about variables.If you have ever taken a math class you have probably seen variables of some kind. Equations, for example, are made up of variables, or letters that represent numbers you pick.$
+        Let’s talk about variables! If you have ever taken a math class you have probably seen variables of some kind. Equations, for example, are made up of variables, or letters that represent numbers you pick.
         </string>
     <string name="lesson1_1_2">
         In programming you have variables just like this but instead of the variables only being used for numbers you can use them to represent almost anything!
@@ -117,6 +117,73 @@
         bool g = true;\n
         }
     </string>
+
+    <!-- Lesson 1.2 Strings -->
+    <string name="lesson1_2_1">
+        So, now you know some of the types of variables you can create, but now what do you do with them?
+        </string>
+    <string name="lesson1_2_2">
+        We will start with int and double, since these will be most familiar to you!
+    </string>
+    <string name="lesson1_2_3">
+        To start, we will declare the variables.  Declaring a variable means giving it a name and a type.
+        </string>
+    <string name="lesson1_2_4">
+        You already know some of the types of variables you can create, but now what do you do with them?
+        </string>
+    <string name="lesson1_2_5">
+        Last lesson we used single letters as variable names, but really it can be anything you want!  It just has to start with a letter and have valid characters for the language.
+        Typically, you want to name your variables something meaningful, so we can keep track of what it is representing.
+        </string>
+    <string name="lesson1_2_6">
+        So now that we have named them, lets do simple addition!
+        </string>
+    <string name="lesson1_2_7">
+        After this simple expression, our variable whole_num now has 16 assigned to it, and our variable decimal_num has 16.5 in it.
+        </string>
+    <string name="lesson1_2_8">
+        You may be wondering, what is so different about int and double? Lets say we change out some of the numbers.
+        </string>
+    <string name="lesson1_2_9">
+        These 2 equations may look the same, but when adding or subtracting integers you lose the decimal. It does not round, but rather chops it
+        off like it was never there! This is called truncating.
+        </string>
+    <string name="lesson1_2_10">
+        So, while decimal_num holds 16.5 like you would expect, whole_num still holds 16 because the decimal was removed.
+        </string>
+    <string name="lesson1_2_11">
+        This concept of truncating applies to subtraction, multiplication, and division as well. Let’s practice!
+        </string>
+
+    <!-- Lesson 1.2 Code Strings -->
+
+    <string name = "code1_2_1">
+        int main()\n
+        {\n
+        int whole_num;\n
+        double decimal_num;\n
+        }
+    </string>
+    <string name = "code1_2_2">
+        int main()\n
+        {\n
+        int whole_num;\n
+        double decimal_num;\n\n
+        whole_num = 10 + 6;\n
+        decimal_num = 10.2 + 6.3;\n
+        }
+    </string>
+    <string name = "code1_2_3">
+        int main()\n
+        {\n
+        int whole_num;\n
+        double decimal_num;\n\n
+        whole_num = 10 + 6.5;\n
+        decimal_num = 10 + 6.5;\n
+        }
+    </string>
+
+
     <string name="about_us">Thanks for checking out CATDOGWALRUS! This app is meant to
         aid anyone who wants to learn how to program. We start from the ground up
         using hands on games that could hopefully even teach your grandma the core concepts of

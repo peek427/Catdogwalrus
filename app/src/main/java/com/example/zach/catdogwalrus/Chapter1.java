@@ -13,6 +13,7 @@ import android.content.Intent;
 public class Chapter1 extends ActionBarActivity implements OnClickListener{
 
     private Button Ch1Les1;
+    private Button Ch1Les2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
         // CONNECT BUTTONS TO LAYOUT AND LISTENERS
         Ch1Les1 = (Button) findViewById(R.id.Ch1Les1);
         Ch1Les1.setOnClickListener(this);
+        Ch1Les2 = (Button) findViewById(R.id.Ch1Les2);
+        Ch1Les2.setOnClickListener(this);
     }
 
 
@@ -55,6 +58,12 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
           // go to lesson 1
             Intent to_lesson_1= new Intent(v.getContext(), Lesson1_1.class);
             startActivity(to_lesson_1);
+        }
+        if (v == Ch1Les2)
+        {
+            // go to lesson 1
+            Intent to_lesson_2= new Intent(v.getContext(), Lesson1_2.class);
+            startActivity(to_lesson_2);
         }
 
     }

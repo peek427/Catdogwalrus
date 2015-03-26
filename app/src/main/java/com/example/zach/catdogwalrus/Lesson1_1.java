@@ -16,6 +16,8 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
     private Button next_button;
     private Button back_button;
     int counter = 1;
+    TextView codeText;
+    TextView lessonText;
 
 
 
@@ -25,7 +27,9 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
         setContentView(R.layout.lesson_layout);
 
 
-
+        codeText = (TextView) findViewById(R.id.codeText);
+        lessonText = (TextView) findViewById(R.id.lessonText);
+        lessonText.setText(R.string.lesson1_1_1);
         next_button = (Button) findViewById(R.id.next_button);
         next_button.setOnClickListener(this);
         back_button = (Button) findViewById(R.id.back_button);
@@ -63,8 +67,7 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
     @Override
     public void onClick(View v)
     {
-        TextView lessonText = (TextView) findViewById(R.id.lessonText);
-        TextView codeText = (TextView) findViewById(R.id.codeText);
+
 
         if (v == next_button)
         {

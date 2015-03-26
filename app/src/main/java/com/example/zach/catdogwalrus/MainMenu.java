@@ -30,8 +30,6 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
         chapterselect_button.setOnClickListener(this);
         credits_button = (Button) findViewById(R.id.CreditsButton);
         credits_button.setOnClickListener(this);
-        test_button = (Button) findViewById(R.id.TestButton);
-        test_button.setOnClickListener(this);
     }
 
 
