@@ -28,6 +28,12 @@
         android:layout_alignParentRight= "false"
         android:id="@+id/frameLayout">
 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|top">
+
+
         <Button
             android:id="@+id/Ch1Les1"
             android:text="1"
@@ -37,6 +43,8 @@
             android:layout_height="75dp"
             android:background="@drawable/lessonbutton"
             android:layout_gravity="start|top" />
+
+        </RelativeLayout>
 
         <Button
             android:id="@+id/Ch1Les2"
@@ -117,6 +125,7 @@
             android:layout_height="75dp"
             android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|bottom" />
+
 
 
     </FrameLayout>
@@ -224,6 +233,6 @@
             android:background="@drawable/lessonbuttonlocked"
             android:layout_gravity="end|bottom" />
     </FrameLayout>
-    />
 
+    />
 </RelativeLayout>
