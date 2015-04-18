@@ -76,24 +76,24 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
                 case 2: lessonText.setText(R.string.lesson1_1_2); break;
                 case 3: lessonText.setText(R.string.lesson1_1_3); break;
                 case 4: lessonText.setText(R.string.lesson1_1_4);
-                        codeText.setText(R.string.code1_1_1);
-                        break;
+                    codeText.setText(R.string.code1_1_1);
+                    break;
                 case 5: lessonText.setText(R.string.lesson1_1_5);
-                        codeText.setText(R.string.code1_1_2);
-                        break;
+                    codeText.setText(R.string.code1_1_2);
+                    break;
                 case 6: lessonText.setText(R.string.lesson1_1_6);
-                        codeText.setText(R.string.code1_1_3);
-                        break;
+                    codeText.setText(R.string.code1_1_3);
+                    break;
                 case 7: lessonText.setText(R.string.lesson1_1_7);
-                        codeText.setText(R.string.code1_1_4);
-                        break;
+                    codeText.setText(R.string.code1_1_4);
+                    break;
                 case 8: lessonText.setText(R.string.lesson1_1_8);
-                        codeText.setText(R.string.code1_1_5);
-                        break;
+                    codeText.setText(R.string.code1_1_5);
+                    break;
                 case 9: lessonText.setText(R.string.lesson1_1_9); break;
                 case 10:  Intent toGame = new Intent(v.getContext(), VariableMinigame.class);
                     startActivity(toGame); break;
-             }
+            }
         }
         else if ( v == back_button)
         {
@@ -105,17 +105,17 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
                 case 2: lessonText.setText(getResources().getString(R.string.lesson1_1_2)); break;
                 case 3: lessonText.setText(getResources().getString(R.string.lesson1_1_3)); break;
                 case 4: lessonText.setText(getResources().getString(R.string.lesson1_1_4));
-                        codeText.setText(R.string.code1_1_1);
-                        break;
+                    codeText.setText(R.string.code1_1_1);
+                    break;
                 case 5: lessonText.setText(getResources().getString(R.string.lesson1_1_5));
-                        codeText.setText(R.string.code1_1_2);
-                        break;
+                    codeText.setText(R.string.code1_1_2);
+                    break;
                 case 6: lessonText.setText(getResources().getString(R.string.lesson1_1_6));
-                        codeText.setText(R.string.code1_1_3);
-                        break;
+                    codeText.setText(R.string.code1_1_3);
+                    break;
                 case 7: lessonText.setText(getResources().getString(R.string.lesson1_1_7));
-                        codeText.setText(R.string.code1_1_4);
-                        break;
+                    codeText.setText(R.string.code1_1_4);
+                    break;
                 case 8: lessonText.setText(getResources().getString(R.string.lesson1_1_8)); break;
                 case 9: lessonText.setText(getResources().getString(R.string.lesson1_1_9)); break;
             }
@@ -123,6 +123,4 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
 
     }
 }
-
-
 

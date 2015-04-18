@@ -26,13 +26,19 @@
             android:label="CreditsMenu"/>
         <activity android:name=".VariableMinigame" android:noHistory="true"
             android:label="VariableMinigame"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            />
         <activity android:name=".Lesson1_1"
             android:label="Lesson1_1"
             android:screenOrientation="landscape"/>
         <activity android:name=".Lesson1_2"
-            android:label="Lesson1_1"
-            android:screenOrientation="landscape"/>
+                    android:label="Lesson1_1"
+                    android:screenOrientation="landscape"/>
+        <activity
+                    android:name=".ControlMinigame"
+                    android:label="@string/title_activity_control_minigame"
+                    android:screenOrientation="landscape"
+            android:noHistory="true"/>
     </application>
 
 </manifest>
