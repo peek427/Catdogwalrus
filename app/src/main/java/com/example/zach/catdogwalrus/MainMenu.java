@@ -67,6 +67,10 @@ public class MainMenu extends ActionBarActivity implements OnClickListener{
             Intent tochapterselect = new Intent(v.getContext(), ChapterMenu.class);
             startActivity(tochapterselect);
         }
+        if (v == test_button){
+            Intent totest = new Intent(v.getContext(), ControlMinigame.class);
+            startActivity(totest);
+        }
     }
 
     }

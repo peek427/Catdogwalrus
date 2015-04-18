@@ -1,19 +1,19 @@
 package com.example.zach.catdogwalrus;
-import android.support.v4.app.DialogFragment;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
 /**
  * Created by Zach on 2/11/2015.
  */
-public class Score_alert_fragment extends DialogFragment {
+public class Score_alert_fragment_controlminigame extends DialogFragment {
 
     // two buttons on the window
     Button againbutton;
@@ -23,7 +23,7 @@ public class Score_alert_fragment extends DialogFragment {
     TextView hscore;
     int h; // holds number for high score
     int y; // holds number for your score
-    public Score_alert_fragment() {
+    public Score_alert_fragment_controlminigame() {
         // Required empty public constructor.
     }
 
@@ -45,7 +45,7 @@ public class Score_alert_fragment extends DialogFragment {
         thelistener = new mylistener();
         againbutton.setOnClickListener(thelistener);
         lessonbutton.setOnClickListener(thelistener);
-        getDialog().setTitle("Time's up!");
+        getDialog().setTitle("Game finished!");
         getDialog().setCanceledOnTouchOutside(false); // prevent exit on click outside of dialog
         getDialog().setCancelable(false); // prevent exit on back button
         return v;
@@ -57,7 +57,8 @@ public class Score_alert_fragment extends DialogFragment {
         {
             if (v == againbutton)
             {
-                Intent again = new Intent(v.getContext(), VariableMinigame.class);
+
+                Intent again = new Intent(v.getContext(), ControlMinigame.class);
                 startActivity(again);
             }
             else if (v == lessonbutton)

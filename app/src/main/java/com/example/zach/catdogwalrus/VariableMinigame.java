@@ -1,29 +1,18 @@
 package com.example.zach.catdogwalrus;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.CountDownTimer;
 import android.os.SystemClock;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.view.View;
 import android.view.View.OnDragListener;
 import android.view.View.OnTouchListener;
-import android.view.View.DragShadowBuilder;
-import android.content.Intent;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -205,7 +194,7 @@ public class VariableMinigame extends Minigame implements OnClickListener{
                //IMPORTANT ********************************************************************************
                 // THIS CODE SEGMENT IS HOW YOU MAKE THE END-OF-GAME SCORE DIALOG BOX APPEAR
                 FragmentManager fm = getSupportFragmentManager();
-                Score_alert_fragment alertfragment = new Score_alert_fragment();
+                Score_alert_fragment_variableminigame alertfragment = new Score_alert_fragment_variableminigame();
 
                 //Retrieve high score from preferences
                 if (save.getInt(getString(R.string.high_score), 0) < Score) // If the high score is less than the score
@@ -360,17 +349,7 @@ public class VariableMinigame extends Minigame implements OnClickListener{
 
     @Override
     public void onClick(View v) {
-      //  if (v == credits_button) {
-      //      Intent tocredits = new Intent(v.getContext(), CreditsMenu.class);
-      //      startActivity(tocredits);
-     //   } else if (v == chapterselect_button) {
-      //      Intent tochapterselect = new Intent(v.getContext(), ChapterMenu.class);
-      //      startActivity(tochapterselect);
-      //  }
-        // USED TO SHORTCUT JUMP TO ACITIVTY BEING TESTED. CURRENT: minigame 1
-     //   else if (v == test_button){
-     //       Intent totest = new Intent(v.getContext(), VariableMinigame.class);
-      //      startActivity(totest);
+
        }
 
 
