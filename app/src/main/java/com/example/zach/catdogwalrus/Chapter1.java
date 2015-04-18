@@ -61,7 +61,7 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
         }
         if (v == Ch1Les2)
         {
-            // go to lesson 1
+            // go to lesson 2
             Intent to_lesson_2= new Intent(v.getContext(), Lesson1_2.class);
             startActivity(to_lesson_2);
         }
