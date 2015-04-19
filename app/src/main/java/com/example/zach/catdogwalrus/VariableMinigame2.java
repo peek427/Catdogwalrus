@@ -6,6 +6,7 @@ import android.app.DialogFragment;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
 import android.support.v4.app.FragmentManager;
@@ -47,6 +48,13 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
     private SharedPreferences save;
     final Context context = this; // Used to refer to context within listeners
     Toast toasty; // TOAST USED FOR SCORING
+
+    int correct = 0; //To check correct number
+    private TextView thescore; // Textview for the score
+
+    private Handler myhandler = new Handler(); // Handler for the timer
+    private TextView thetimer; // Textview for the timer
+    long starttime;
 
     private class StringBucket {  // Container that holds the strings to be used in variable minigame 2.
         private Map<Integer, String> stringmap = new HashMap<Integer, String>();
@@ -205,6 +213,40 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((54 - 35) + 1) + 35; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((54 - 35) + 1) + 35; //Random wrong answer
+
+                myrandom = new Random();
+                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+                {
+                    correct = 1;
+                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+                {
+                    correct = 2;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+                {
+                    correct = 3;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else
+                {
+                    correct = 4;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                }
             }
             else if(Question <= 10)
             {
@@ -263,10 +305,25 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
         answer4.setOnClickListener(this);
 
         save = this.getPreferences(Context.MODE_PRIVATE); // Connects the save to the save variable
+        thescore = (TextView) findViewById(R.id.Score);
 
         // initialize stringbucket
         thebucket = new StringBucket();
         thebucket.generaterandom();
+
+        //initialize score
+        Score = 0;
+        thescore.setText("0");
+
+
+        //initialize timer
+        thetimer = (TextView) findViewById(R.id.Timer);
+
+
+        // THIS IS WHERE THE TIMER STARTS
+        starttime = SystemClock.uptimeMillis();
+        myhandler.postDelayed(TimerThread, 0);
+
 
     }//End onCreate
 
@@ -275,18 +332,119 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
     {
         if (v == answer1)
         {
-
+            if(correct == 1)
+            {
+                Score += 100; // add to score
+                thescore.setText("" + Score); // reset score textview to new score value
+                thebucket.generaterandom();
+                answer1.setBackgroundColor(Color.GREEN);
+            }
+            else
+            {
+                Score -= 50; // subtract from score
+                if (Score < 0)
+                    Score = 0;  //prevents negative scores
+                thescore.setText("" + Score); // reset score textview
+                answer1.setBackgroundColor(Color.RED);
+            }
         }
         if (v == answer2)
         {
+            if(correct == 2)
+            {
+                Score += 100; // add to score
+                thescore.setText("" + Score); // reset score textview to new score value
+                thebucket.generaterandom();
+                answer2.setBackgroundColor(Color.GREEN);
+            }
+            else
+            {
+                Score -= 50; // subtract from score
+                if (Score < 0)
+                    Score = 0;  //prevents negative scores
+                thescore.setText("" + Score); // reset score textview
+                answer2.setBackgroundColor(Color.RED);
+            }
         }
         if (v == answer3)
         {
-
+            if(correct == 3)
+            {
+                Score += 100; // add to score
+                thescore.setText("" + Score); // reset score textview to new score value
+                thebucket.generaterandom();
+                answer3.setBackgroundColor(Color.GREEN);
+            }
+            else
+            {
+                Score -= 50; // subtract from score
+                if (Score < 0)
+                    Score = 0;  //prevents negative scores
+                thescore.setText("" + Score); // reset score textview
+                answer3.setBackgroundColor(Color.RED);
+            }
         }
         if (v == answer4)
         {
+            if(correct ==4)
+            {
+                Score += 100; // add to score
+                thescore.setText("" + Score); // reset score textview to new score value
+                thebucket.generaterandom();
+                answer4.setBackgroundColor(Color.GREEN);
+            }
+            else
+            {
+                Score -= 50; // subtract from score
+                if (Score < 0)
+                    Score = 0;  //prevents negative scores
+                thescore.setText("" + Score); // reset score textview
+                answer4.setBackgroundColor(Color.RED);
+            }
         }
 
     }//End of onClick
+
+    private Runnable TimerThread = new Runnable()
+    {
+        long ms = 0L;
+        long buffer = 0L;
+        long updated = 0L;
+        public void run() {
+
+            ms = SystemClock.uptimeMillis() - starttime;
+            updated = buffer + ms;
+
+            int sec = (int) (updated / 1000);
+            thetimer.setText("" + (30 - sec));
+            if (sec < 30)
+                myhandler.postDelayed(this, 0);
+            else {
+
+
+                //IMPORTANT ********************************************************************************
+                // THIS CODE SEGMENT IS HOW YOU MAKE THE END-OF-GAME SCORE DIALOG BOX APPEAR
+                FragmentManager fm = getSupportFragmentManager();
+                Score_alert_fragment_variableMinigame2 alertfragment = new Score_alert_fragment_variableMinigame2();
+
+                //Retrieve high score from preferences
+                if (save.getInt(getString(R.string.high_score), 0) < Score) // If the high score is less than the score
+                {
+                    pushScore();
+                }
+
+                alertfragment.y=Score; // value of score
+                alertfragment.h=save.getInt(getString(R.string.high_score), 0); // value of high score taken from save
+                alertfragment.show(fm, "scorefrag");
+                // END OF CODE SEGMENT ******************************************************************
+
+
+                // Ideally, a sound will be played, and a window will pop up on top of the variable
+                // TextView that shows what score you reached and your old highscore. It can also
+                // display whether or not the next lesson has been unlocked already by your score.
+
+            }
+        }
+    };
+
 }//end of class
