@@ -27,7 +27,7 @@
                 android:id="@+id/c1image"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:src="@drawable/oneempty" />
+                android:src="@drawable/blueempty" />
 
             <TextView
                 android:id="@+id/c1text"
@@ -50,7 +50,7 @@
                 android:id="@+id/c2image"
                 android:layout_height="50dp"
                 android:layout_width="120dp"
-                android:src="@drawable/twoempty" />
+                android:src="@drawable/greenempty" />
 
             <TextView
                 android:id="@+id/c2text"
@@ -81,7 +81,7 @@
             android:id="@+id/c3image"
             android:layout_width="140dp"
             android:layout_height="80dp"
-            android:src="@drawable/threeempty" />
+            android:src="@drawable/redempty" />
 
         <TextView
             android:id="@+id/c3text"
@@ -148,7 +148,7 @@
                 android:clickable="true"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:src="@drawable/onefull" />
+                android:src="@drawable/bluefull" />
 
             <TextView
                 android:id="@+id/onechoice_1text"
@@ -173,7 +173,7 @@
                 android:clickable="true"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:src="@drawable/onefull" />
+                android:src="@drawable/bluefull" />
 
             <TextView
                 android:id="@+id/onechoice_2text"
@@ -199,7 +199,7 @@
                 android:clickable="true"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:src="@drawable/onefull" />
+                android:src="@drawable/bluefull" />
 
             <TextView
                 android:id="@+id/onechoice_3text"
@@ -237,7 +237,7 @@
                 android:clickable="true"
                 android:layout_height="50dp"
                 android:layout_width="120dp"
-                android:src="@drawable/twofull" />
+                android:src="@drawable/greenfull" />
 
             <TextView
                 android:id="@+id/twochoice_1text"
@@ -263,7 +263,7 @@
                 android:clickable="true"
                 android:layout_height="50dp"
                 android:layout_width="120dp"
-                android:src="@drawable/twofull" />
+                android:src="@drawable/greenfull" />
 
             <TextView
                 android:id="@+id/twochoice_2text"
@@ -288,7 +288,7 @@
                 android:clickable="true"
                 android:layout_height="50dp"
                 android:layout_width="120dp"
-                android:src="@drawable/twofull" />
+                android:src="@drawable/greenfull" />
 
             <TextView
                 android:id="@+id/twochoice_3text"
@@ -314,7 +314,7 @@
                 android:clickable="true"
                 android:layout_height="50dp"
                 android:layout_width="120dp"
-                android:src="@drawable/twofull" />
+                android:src="@drawable/greenfull" />
 
             <TextView
                 android:id="@+id/twochoice_4text"
@@ -353,7 +353,7 @@
                 android:clickable="true"
                 android:layout_width="140dp"
                 android:layout_height="80dp"
-                android:src="@drawable/threefull" />
+                android:src="@drawable/redfull" />
 
             <TextView
                 android:id="@+id/threechoice_1text"
@@ -380,7 +380,7 @@
                 android:clickable="true"
                 android:layout_width="140dp"
                 android:layout_height="80dp"
-                android:src="@drawable/threefull" />
+                android:src="@drawable/redfull" />
 
             <TextView
                 android:id="@+id/threechoice_2text"
@@ -407,7 +407,7 @@
                 android:clickable="true"
                 android:layout_width="140dp"
                 android:layout_height="80dp"
-                android:src="@drawable/threefull" />
+                android:src="@drawable/redfull" />
 
             <TextView
                 android:id="@+id/threechoice_3text"

@@ -160,7 +160,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicegreentext.setVisibility(View.VISIBLE);
             lastchoicegreen = choicegreen1;
             lastchoicegreentext = choicegreen1text;
-            maingreen.setImageResource(R.drawable.threefull);
+            maingreen.setImageResource(R.drawable.redfull);
             maingreentext.setText(choicegreen1text.getText());
             choicegreen1.setVisibility(View.GONE);
             choicegreen1text.setVisibility(View.GONE);
@@ -172,7 +172,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicegreentext.setVisibility(View.VISIBLE);
             lastchoicegreen = choicegreen2;
             lastchoicegreentext = choicegreen2text;
-            maingreen.setImageResource(R.drawable.threefull);
+            maingreen.setImageResource(R.drawable.redfull);
             maingreentext.setText(choicegreen2text.getText());
             choicegreen2.setVisibility(View.GONE);
             choicegreen2text.setVisibility(View.GONE);
@@ -184,7 +184,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicegreentext.setVisibility(View.VISIBLE);
             lastchoicegreen = choicegreen3;
             lastchoicegreentext = choicegreen3text;
-            maingreen.setImageResource(R.drawable.threefull);
+            maingreen.setImageResource(R.drawable.redfull);
             maingreentext.setText(choicegreen3text.getText());
             choicegreen3.setVisibility(View.GONE);
             choicegreen3text.setVisibility(View.GONE);
@@ -197,7 +197,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicebluetext.setVisibility(View.VISIBLE);
             lastchoiceblue = choiceblue1;
             lastchoicebluetext = choiceblue1text;
-            mainblue.setImageResource(R.drawable.onefull);
+            mainblue.setImageResource(R.drawable.bluefull);
             mainbluetext.setText(choiceblue1text.getText());
             choiceblue1.setVisibility(View.GONE);
             choiceblue1text.setVisibility(View.GONE);
@@ -209,7 +209,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicebluetext.setVisibility(View.VISIBLE);
             lastchoiceblue = choiceblue2;
             lastchoicebluetext = choiceblue2text;
-            mainblue.setImageResource(R.drawable.onefull);
+            mainblue.setImageResource(R.drawable.bluefull);
             mainbluetext.setText(choiceblue2text.getText());
             choiceblue2.setVisibility(View.GONE);
             choiceblue2text.setVisibility(View.GONE);
@@ -221,7 +221,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicebluetext.setVisibility(View.VISIBLE);
             lastchoiceblue = choiceblue3;
             lastchoicebluetext = choiceblue3text;
-            mainblue.setImageResource(R.drawable.onefull);
+            mainblue.setImageResource(R.drawable.bluefull);
             mainbluetext.setText(choiceblue3text.getText());
             choiceblue3.setVisibility(View.GONE);
             choiceblue3text.setVisibility(View.GONE);
@@ -233,7 +233,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered1;
             lastchoiceredtext = choicered1text;
-            mainred.setImageResource(R.drawable.twofull);
+            mainred.setImageResource(R.drawable.greenfull);
             mainredtext.setText(choicered1text.getText());
             choicered1.setVisibility(View.GONE);
             choicered1text.setVisibility(View.GONE);
@@ -245,7 +245,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered2;
             lastchoiceredtext = choicered2text;
-            mainred.setImageResource(R.drawable.twofull);
+            mainred.setImageResource(R.drawable.greenfull);
             mainredtext.setText(choicered2text.getText());
             choicered2.setVisibility(View.GONE);
             choicered2text.setVisibility(View.GONE);
@@ -257,7 +257,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered3;
             lastchoiceredtext = choicered3text;
-            mainred.setImageResource(R.drawable.twofull);
+            mainred.setImageResource(R.drawable.greenfull);
             mainredtext.setText(choicered3text.getText());
             choicered3.setVisibility(View.GONE);
             choicered3text.setVisibility(View.GONE);
@@ -269,7 +269,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered4;
             lastchoiceredtext = choicered4text;
-            mainred.setImageResource(R.drawable.twofull);
+            mainred.setImageResource(R.drawable.greenfull);
             mainredtext.setText(choicered4text.getText());
             choicered4.setVisibility(View.GONE);
             choicered4text.setVisibility(View.GONE);
@@ -411,9 +411,9 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             greenchosen=false;
             bluechosen=false;
 
-            maingreen.setImageResource(R.drawable.threeempty);
-            mainred.setImageResource(R.drawable.twoempty);
-            mainblue.setImageResource(R.drawable.oneempty);
+            maingreen.setImageResource(R.drawable.redempty);
+            mainred.setImageResource(R.drawable.greenempty);
+            mainblue.setImageResource(R.drawable.blueempty);
             maingreentext.setText("");
             mainbluetext.setText("");
             mainredtext.setText("");
