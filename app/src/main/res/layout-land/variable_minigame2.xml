@@ -8,7 +8,7 @@
     <fragment
         android:name="com.example.zach.catdogwalrus.Minigame_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         tools:layout="@layout/minigame_fragment_layout"
         android:id="@+id/minifrag"/>
 
@@ -19,7 +19,6 @@
         android:text="30"
         android:id="@+id/Timer"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.17"
         android:textColor="#ffff7f78" />
 
     <TextView
@@ -31,38 +30,33 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.72" />
 
-    <FrameLayout
-        android:layout_width="437dp"
-        android:layout_height="156dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/answer1"
+        android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" "
-            android:id="@+id/answer1"
-            android:layout_gravity="center_horizontal|top" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/answer2"
+        android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" "
-            android:id="@+id/answer3"
-            android:layout_gravity="center" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/answer3"
+        android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" "
-            android:id="@+id/answer2"
-            android:layout_gravity="right|top" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" "
-            android:id="@+id/answer4"
-            android:layout_gravity="right|center_vertical" />
-    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:id="@+id/answer4"
+        android:layout_gravity="center_horizontal" />
 
 
 </LinearLayout>
