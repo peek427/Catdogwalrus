@@ -14,6 +14,7 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
 
     private Button Ch1Les1;
     private Button Ch1Les2;
+    private Button Ch1Les3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
         Ch1Les1.setOnClickListener(this);
         Ch1Les2 = (Button) findViewById(R.id.Ch1Les2);
         Ch1Les2.setOnClickListener(this);
+        Ch1Les3 = (Button) findViewById(R.id.Ch1Les3);
+        Ch1Les3.setOnClickListener(this);
     }
 
 
@@ -61,9 +64,15 @@ public class Chapter1 extends ActionBarActivity implements OnClickListener{
         }
         if (v == Ch1Les2)
         {
-            // go to lesson 1
+            // go to lesson 2
             Intent to_lesson_2= new Intent(v.getContext(), Lesson1_2.class);
             startActivity(to_lesson_2);
+        }
+        if (v == Ch1Les3)
+        {
+            // go to lesson 2
+            Intent to_lesson_3 = new Intent(v.getContext(), Lesson1_3.class);
+            startActivity(to_lesson_3);
         }
 
     }

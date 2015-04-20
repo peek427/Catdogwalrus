@@ -13,7 +13,7 @@
     import android.widget.TextView;
 
 
-    public class Lesson1_2 extends ActionBarActivity implements OnClickListener {
+    public class Lesson1_3 extends ActionBarActivity implements OnClickListener {
 
         private Button next_button;
         private Button back_button;
@@ -28,7 +28,7 @@
 
             codeText = (TextView) findViewById(R.id.codeText);
             lessonText = (TextView) findViewById(R.id.lessonText);
-            lessonText.setText(R.string.lesson1_2_1);
+            lessonText.setText(R.string.lesson1_3_1);
             next_button = (Button) findViewById(R.id.next_button);
             next_button.setOnClickListener(this);
             back_button = (Button) findViewById(R.id.back_button);
@@ -68,35 +68,14 @@
         @Override
         public void onClick(View v)
         {
-            //TextView lessonText = (TextView) findViewById(R.id.lessonText);
-            //lessonText.setText(R.string.lesson1_2_1);
-            //TextView codeText = (TextView) findViewById(R.id.codeText);
-
             if (v == next_button)
             {
                 counter++;
                 switch(counter){
-                    case 2: lessonText.setText(R.string.lesson1_2_2); break;
-                    case 3: lessonText.setText(R.string.lesson1_2_3);
-                        codeText.setText(R.string.code1_2_1);
+                    case 2: lessonText.setText(R.string.lesson1_3_2); break;
+                    case 3: lessonText.setText(R.string.lesson1_3_3);
                         break;
-                    case 4: lessonText.setText(R.string.lesson1_2_4);
-                        break;
-                    case 5: lessonText.setText(R.string.lesson1_2_5);
-                        break;
-                    case 6: lessonText.setText(R.string.lesson1_2_6);
-                        codeText.setText(R.string.code1_2_2);
-                        break;
-                    case 7: lessonText.setText(R.string.lesson1_2_7);
-                        break;
-                    case 8: lessonText.setText(R.string.lesson1_2_8);
-                        codeText.setText(R.string.code1_2_3);
-                        break;
-                    case 9: lessonText.setText(R.string.lesson1_2_9); break;
-                    case 10: lessonText.setText(R.string.lesson1_2_10); break;
-                    case 11: lessonText.setText(R.string.lesson1_2_11); break;
-                    // When minigame 2 is finished launch here!
-                    case 12:  Intent toGame = new Intent(v.getContext(), VariableMinigame2.class);
+                    case 4:  Intent toGame = new Intent(v.getContext(), ControlMinigame.class);
                     startActivity(toGame); break;
                 }
             }
@@ -106,28 +85,10 @@
                 switch(counter){
                     case 0: Intent toChapter = new Intent(v.getContext(), Chapter1.class);
                         startActivity(toChapter); break;
-                    case 1: lessonText.setText(getResources().getString(R.string.lesson1_2_1)); break;
-                    case 2: lessonText.setText(getResources().getString(R.string.lesson1_2_2)); break;
-                    case 3: lessonText.setText(getResources().getString(R.string.lesson1_2_3));
+                    case 1: lessonText.setText(getResources().getString(R.string.lesson1_3_1)); break;
+                    case 2: lessonText.setText(getResources().getString(R.string.lesson1_3_2)); break;
+                    case 3: lessonText.setText(getResources().getString(R.string.lesson1_3_3));
                         codeText.setText(R.string.code1_2_1);
-                        break;
-                    case 4: lessonText.setText(getResources().getString(R.string.lesson1_2_4));
-                        break;
-                    case 5: lessonText.setText(getResources().getString(R.string.lesson1_2_5));
-                        break;
-                    case 6: lessonText.setText(getResources().getString(R.string.lesson1_2_6));
-                        break;
-                    case 7: lessonText.setText(getResources().getString(R.string.lesson1_2_7));
-                        codeText.setText(R.string.code1_2_2);
-                        break;
-                    case 8: lessonText.setText(getResources().getString(R.string.lesson1_2_8));
-                        codeText.setText(R.string.code1_2_3);
-                        break;
-                    case 9: lessonText.setText(getResources().getString(R.string.lesson1_2_9));
-                        break;
-                    case 10: lessonText.setText(R.string.lesson1_2_10);
-                        break;
-                    case 11: lessonText.setText(R.string.lesson1_2_11);
                         break;
                 }
             }
