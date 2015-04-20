@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="10dp"
         android:text="Questions go here. "
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
@@ -33,6 +34,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text=" "
         android:id="@+id/answer1"
         android:layout_gravity="center_horizontal" />
@@ -40,6 +42,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text=" "
         android:id="@+id/answer2"
         android:layout_gravity="center_horizontal" />
@@ -47,6 +50,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text=" "
         android:id="@+id/answer3"
         android:layout_gravity="center_horizontal" />
@@ -54,6 +58,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text=" "
         android:id="@+id/answer4"
         android:layout_gravity="center_horizontal" />
