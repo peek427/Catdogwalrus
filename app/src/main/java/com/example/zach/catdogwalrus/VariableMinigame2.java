@@ -56,8 +56,6 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
     private TextView thetimer; // Textview for the timer
     long starttime;
 
-    long colorChange;
-    double confirmChange;
     private class StringBucket {  // Container that holds the strings to be used in variable minigame 2.
         private Map<Integer, String> stringmap = new HashMap<Integer, String>();
 
@@ -202,6 +200,12 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
 
         public void generaterandom() // generates random keys used in the stringbucket
         {
+
+            answer1.setBackgroundColor(Color.BLUE);
+            answer2.setBackgroundColor(Color.BLUE);
+            answer3.setBackgroundColor(Color.BLUE);
+            answer4.setBackgroundColor(Color.BLUE);
+            
             Random myrandom = new Random();
             Question = myrandom.nextInt(14) + 1;
 
@@ -289,8 +293,9 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
             }
-        }
-    }
+
+        }//End of GenerateRandom
+    }//End of stringBucket
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -340,17 +345,13 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
     {
         if (v == answer1)
         {
-            confirmChange = colorChange+.1;
+
             if(correct == 1)
             {
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                while(colorChange < confirmChange)
-                {
-                    answer1.setBackgroundColor(Color.GREEN);
-                }
-                answer1.setBackgroundColor(Color.BLUE);
+                answer1.setBackgroundColor(Color.GREEN);
             }
             else
             {
@@ -358,26 +359,19 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 if (Score < 0)
                     Score = 0;  //prevents negative scores
                 thescore.setText("" + Score); // reset score textview
-                while(colorChange < confirmChange)
-                {
-                    answer1.setBackgroundColor(Color.RED);
-                }
-                answer1.setBackgroundColor(Color.BLUE);
+                answer1.setBackgroundColor(Color.RED);
+
             }
         }
         if (v == answer2)
         {
-            confirmChange = colorChange+.1;
             if(correct == 2)
             {
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                while(colorChange < confirmChange)
-                {
-                    answer2.setBackgroundColor(Color.GREEN);
-                }
-                answer2.setBackgroundColor(Color.BLUE);
+                answer2.setBackgroundColor(Color.GREEN);
+
             }
             else
             {
@@ -385,26 +379,18 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 if (Score < 0)
                     Score = 0;  //prevents negative scores
                 thescore.setText("" + Score); // reset score textview
-                while(colorChange < confirmChange)
-                {
-                    answer2.setBackgroundColor(Color.RED);
-                }
-                answer2.setBackgroundColor(Color.BLUE);
+                answer2.setBackgroundColor(Color.RED);
             }
         }
         if (v == answer3)
         {
-            confirmChange = colorChange+.1;
             if(correct == 3)
             {
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                while(colorChange < confirmChange)
-                {
-                    answer3.setBackgroundColor(Color.GREEN);
-                }
-                answer3.setBackgroundColor(Color.BLUE);
+                answer3.setBackgroundColor(Color.GREEN);
+
             }
             else
             {
@@ -412,26 +398,19 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 if (Score < 0)
                     Score = 0;  //prevents negative scores
                 thescore.setText("" + Score); // reset score textview
-                while(colorChange < confirmChange)
-                {
-                    answer3.setBackgroundColor(Color.RED);
-                }
-                answer3.setBackgroundColor(Color.BLUE);
+                answer3.setBackgroundColor(Color.RED);
+
             }
         }
         if (v == answer4)
         {
-            confirmChange = colorChange+.1;
             if(correct ==4)
             {
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                while(colorChange < confirmChange)
-                {
-                    answer4.setBackgroundColor(Color.GREEN);
-                }
-                answer4.setBackgroundColor(Color.BLUE);
+                answer4.setBackgroundColor(Color.GREEN);
+
             }
             else
             {
@@ -439,11 +418,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 if (Score < 0)
                     Score = 0;  //prevents negative scores
                 thescore.setText("" + Score); // reset score textview
-                while(colorChange < confirmChange)
-                {
-                    answer4.setBackgroundColor(Color.RED);
-                }
-                answer4.setBackgroundColor(Color.BLUE);
+                answer4.setBackgroundColor(Color.RED);
             }
         }
 
@@ -460,7 +435,6 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
             updated = buffer + ms;
 
             int sec = (int) (updated / 1000);
-            colorChange = sec;
             thetimer.setText("" + (30 - sec));
             if (sec < 30)
                 myhandler.postDelayed(this, 0);
