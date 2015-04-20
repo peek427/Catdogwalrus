@@ -192,7 +192,7 @@
 
     <!-- Structure 5 -->
     <string name="wr5">(int x=0; x&lt;10; x++)</string>
-    <string name="wg5">number++;</string>
+    <string name="wg5">number+=2;</string>
     <string name="lg5_1">2*10;</string>
     <string name="lg5_2">number+2;</string>
     <string name="lr5_1">(x==0; x&lt;10; x)</string>
