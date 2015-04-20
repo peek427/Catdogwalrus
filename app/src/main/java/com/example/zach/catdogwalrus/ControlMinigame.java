@@ -4,11 +4,14 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class ControlMinigame extends Minigame implements OnClickListener {
@@ -64,6 +67,9 @@ public class ControlMinigame extends Minigame implements OnClickListener {
 
     private SharedPreferences save;
 
+    View toastlayout;
+    LayoutInflater inf;
+    Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,6 +154,8 @@ public class ControlMinigame extends Minigame implements OnClickListener {
         greenchosen=false;
         save = this.getPreferences(Context.MODE_PRIVATE); // Connects the save to the save variable
 
+       inf = getLayoutInflater();
+        toast = new Toast(getApplicationContext());
 
     }
 
@@ -160,7 +168,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicegreentext.setVisibility(View.VISIBLE);
             lastchoicegreen = choicegreen1;
             lastchoicegreentext = choicegreen1text;
-            maingreen.setImageResource(R.drawable.redfull);
+            maingreen.setImageResource(R.drawable.greenfull);
             maingreentext.setText(choicegreen1text.getText());
             choicegreen1.setVisibility(View.GONE);
             choicegreen1text.setVisibility(View.GONE);
@@ -172,7 +180,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicegreentext.setVisibility(View.VISIBLE);
             lastchoicegreen = choicegreen2;
             lastchoicegreentext = choicegreen2text;
-            maingreen.setImageResource(R.drawable.redfull);
+            maingreen.setImageResource(R.drawable.greenfull);
             maingreentext.setText(choicegreen2text.getText());
             choicegreen2.setVisibility(View.GONE);
             choicegreen2text.setVisibility(View.GONE);
@@ -184,7 +192,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoicegreentext.setVisibility(View.VISIBLE);
             lastchoicegreen = choicegreen3;
             lastchoicegreentext = choicegreen3text;
-            maingreen.setImageResource(R.drawable.redfull);
+            maingreen.setImageResource(R.drawable.greenfull);
             maingreentext.setText(choicegreen3text.getText());
             choicegreen3.setVisibility(View.GONE);
             choicegreen3text.setVisibility(View.GONE);
@@ -233,7 +241,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered1;
             lastchoiceredtext = choicered1text;
-            mainred.setImageResource(R.drawable.greenfull);
+            mainred.setImageResource(R.drawable.redfull);
             mainredtext.setText(choicered1text.getText());
             choicered1.setVisibility(View.GONE);
             choicered1text.setVisibility(View.GONE);
@@ -245,7 +253,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered2;
             lastchoiceredtext = choicered2text;
-            mainred.setImageResource(R.drawable.greenfull);
+            mainred.setImageResource(R.drawable.redfull);
             mainredtext.setText(choicered2text.getText());
             choicered2.setVisibility(View.GONE);
             choicered2text.setVisibility(View.GONE);
@@ -257,7 +265,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered3;
             lastchoiceredtext = choicered3text;
-            mainred.setImageResource(R.drawable.greenfull);
+            mainred.setImageResource(R.drawable.redfull);
             mainredtext.setText(choicered3text.getText());
             choicered3.setVisibility(View.GONE);
             choicered3text.setVisibility(View.GONE);
@@ -269,7 +277,7 @@ public class ControlMinigame extends Minigame implements OnClickListener {
             lastchoiceredtext.setVisibility(View.VISIBLE);
             lastchoicered = choicered4;
             lastchoiceredtext = choicered4text;
-            mainred.setImageResource(R.drawable.greenfull);
+            mainred.setImageResource(R.drawable.redfull);
             mainredtext.setText(choicered4text.getText());
             choicered4.setVisibility(View.GONE);
             choicered4text.setVisibility(View.GONE);
@@ -288,10 +296,14 @@ public class ControlMinigame extends Minigame implements OnClickListener {
                     //update score
                     Score+=100;
                     thescore.setText("" + Score);
+
+                    //display success toast
+                    toastlayout = inf.inflate(R.layout.correct_toast, (ViewGroup) findViewById(R.id.correct_toast_layout));
+
                 }
                 else // if they didn't get it correct, indicate they got it wrong
                 {
-
+                    toastlayout = inf.inflate(R.layout.incorrect_toast, (ViewGroup) findViewById(R.id.incorrect_toast_layout));
                 }
 
                 //either way, reset the prompt
@@ -320,11 +332,16 @@ public class ControlMinigame extends Minigame implements OnClickListener {
                     //update score
                     Score+=100;
                     thescore.setText("" + Score);
+
+                    toastlayout = inf.inflate(R.layout.correct_toast, (ViewGroup) findViewById(R.id.correct_toast_layout));
+
                 }
                 else // if they didn't get it correct, indicate they got it wrong
                 {
 
+                    toastlayout = inf.inflate(R.layout.incorrect_toast, (ViewGroup) findViewById(R.id.incorrect_toast_layout));
                 }
+
                 choicegreen1text.setText(getString(R.string.lg3_1));
                 choicegreen2text.setText(getString(R.string.wg3));
                 choicegreen3text.setText(getString(R.string.lg3_2));
@@ -342,10 +359,12 @@ public class ControlMinigame extends Minigame implements OnClickListener {
                     //update score
                     Score+=100;
                     thescore.setText("" + Score);
+
+                    toastlayout = inf.inflate(R.layout.correct_toast, (ViewGroup) findViewById(R.id.correct_toast_layout));
                 }
                 else // if they didn't get it correct, indicate they got it wrong
                 {
-
+                    toastlayout = inf.inflate(R.layout.incorrect_toast, (ViewGroup) findViewById(R.id.incorrect_toast_layout));
                 }
                 choicegreen1text.setText(getString(R.string.wg4));
                 choicegreen2text.setText(getString(R.string.lg4_2));
@@ -364,10 +383,12 @@ public class ControlMinigame extends Minigame implements OnClickListener {
                     //update score
                     Score+=100;
                     thescore.setText("" + Score);
+
+                    toastlayout = inf.inflate(R.layout.correct_toast, (ViewGroup) findViewById(R.id.correct_toast_layout));
                 }
                 else // if they didn't get it correct, indicate they got it wrong
                 {
-
+                    toastlayout = inf.inflate(R.layout.incorrect_toast, (ViewGroup) findViewById(R.id.incorrect_toast_layout));
                 }
                 choicegreen1text.setText(getString(R.string.lg5_1));
                 choicegreen2text.setText(getString(R.string.lg5_2));
@@ -386,10 +407,12 @@ public class ControlMinigame extends Minigame implements OnClickListener {
                     //update score
                     Score+=100;
                     thescore.setText("" + Score);
+
+                    toastlayout = inf.inflate(R.layout.correct_toast, (ViewGroup) findViewById(R.id.correct_toast_layout));
                 }
                 else // if they didn't get it correct, indicate they got it wrong
                 {
-
+                    toastlayout = inf.inflate(R.layout.incorrect_toast, (ViewGroup) findViewById(R.id.incorrect_toast_layout));
                 }
 
                 // last prompt, so end the game here
@@ -406,13 +429,18 @@ public class ControlMinigame extends Minigame implements OnClickListener {
                 alertfragment.h=save.getInt(getString(R.string.high_score), 0); // value of high score taken from save
                 alertfragment.show(fm, "scorefrag");
             }
+            //display correct or incorrect toast
+            toast.setDuration(Toast.LENGTH_SHORT);
+            toast.setView(toastlayout);
+            toast.show();
 
             redchosen=false;
             greenchosen=false;
             bluechosen=false;
 
-            maingreen.setImageResource(R.drawable.redempty);
-            mainred.setImageResource(R.drawable.greenempty);
+
+            maingreen.setImageResource(R.drawable.greenempty);
+            mainred.setImageResource(R.drawable.redempty);
             mainblue.setImageResource(R.drawable.blueempty);
             maingreentext.setText("");
             mainbluetext.setText("");
