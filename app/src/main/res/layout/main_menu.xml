@@ -49,15 +49,6 @@
         android:layout_marginTop="20dp"
         />
 
-    <!--<Button
-        android:text="TEST"
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:id="@+id/TestButton"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/CreditsButton"
-        android:textSize="15sp"
-        android:layout_marginTop="20dp"
-        />-->
+
 
 </RelativeLayout>

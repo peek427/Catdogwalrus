@@ -18,6 +18,7 @@ import java.util.Map;
 import java.util.Random;
 import android.os.Handler;
 
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,6 +48,7 @@ public class VariableMinigame extends Minigame implements OnClickListener{
     private StringBucket thebucket; // The bucket that holds the strings to be loaded into the draggable variable
 
     private Handler myhandler = new Handler(); // Handler for the timer
+
 
     private class StringBucket {  // Container that holds the strings to be used in variable minigame.
         private Map<Integer, String> stringmap = new HashMap<Integer, String>();
@@ -169,7 +171,6 @@ public class VariableMinigame extends Minigame implements OnClickListener{
         // THIS IS WHERE THE TIMER STARTS
         starttime = SystemClock.uptimeMillis();
         myhandler.postDelayed(TimerThread, 0);
-
 
 
     } // end of onCreate
