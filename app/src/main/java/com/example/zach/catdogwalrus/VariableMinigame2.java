@@ -7,6 +7,7 @@ import android.content.ClipData;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
 import android.support.v4.app.FragmentManager;
@@ -46,6 +47,12 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
     private Button answer3;
     private Button answer4;
     private SharedPreferences save;
+
+    private ImageView star1;
+    private ImageView star2;
+    private ImageView star3;
+
+
     final Context context = this; // Used to refer to context within listeners
     Toast toasty; // TOAST USED FOR SCORING
 
@@ -208,6 +215,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
 
             Random myrandom = new Random();
             Question = myrandom.nextInt(14) + 1;
+            theQuestion.setText(thebucket.stringmap.get(thebucket.Question));
 
             if(Question <= 5)
             {
@@ -219,40 +227,6 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((54 - 35) + 1) + 35; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((54 - 35) + 1) + 35; //Random wrong answer
-
-                myrandom = new Random();
-                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
-                {
-                    correct = 1;
-                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
-                }
-                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
-                {
-                    correct = 2;
-                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
-                }
-                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
-                {
-                    correct = 3;
-                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
-                }
-                else
-                {
-                    correct = 4;
-                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
-                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                }
             }
             else if(Question <= 10)
             {
@@ -294,6 +268,40 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong3 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
             }
 
+            myrandom = new Random();
+            if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+            {
+                correct = 1;
+                answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+            }
+            else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+            {
+                correct = 2;
+                answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+            }
+            else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+            {
+                correct = 3;
+                answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+            }
+            else
+            {
+                correct = 4;
+                answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+            }
+
         }//End of GenerateRandom
     }//End of stringBucket
 
@@ -302,6 +310,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.variable_minigame2);
+        theQuestion= (TextView) findViewById((R.id.theQuestion));
         answer1 = (Button) findViewById(R.id.answer1);
         answer1.setOnClickListener(this);
         answer2 = (Button) findViewById(R.id.answer2);
@@ -337,6 +346,10 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
         starttime = SystemClock.uptimeMillis();
         myhandler.postDelayed(TimerThread, 0);
 
+        //Stars
+        star1 = (ImageView) findViewById(R.id.starSet1_2_1);
+        star2 = (ImageView) findViewById(R.id.starSet1_2_2);
+        star3 = (ImageView) findViewById(R.id.starSet1_2_3);
 
     }//End onCreate
 
@@ -450,6 +463,24 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 if (save.getInt(getString(R.string.high_score), 0) < Score) // If the high score is less than the score
                 {
                     pushScore();
+                    if(save.getInt(getString(R.string.high_score), 0) < 100)
+                    {
+                        //set the stars here.
+                        star1.setBackgroundResource(R.drawable.full_yello);
+                    }
+                    else if(save.getInt(getString(R.string.high_score), 0) < 200)
+                    {
+                        //set the stars here.
+                        star1.setBackgroundResource(R.drawable.full_yello);
+                        star2.setBackgroundResource(R.drawable.full_yello);
+                    }
+                    else
+                    {
+                        //set the stars here.
+                        star1.setBackgroundResource(R.drawable.full_yello);
+                        star2.setBackgroundResource(R.drawable.full_yello);
+                        star3.setBackgroundResource(R.drawable.full_yello);
+                    }
                 }
 
                 alertfragment.y=Score; // value of score

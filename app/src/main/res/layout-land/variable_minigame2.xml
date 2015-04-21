@@ -20,7 +20,8 @@
         android:text="30"
         android:id="@+id/Timer"
         android:layout_gravity="center_horizontal"
-        android:textColor="#ffff7f78" />
+        android:textColor="#ffff7f78"/>
+    />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +29,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginBottom="10dp"
         android:text="Questions go here. "
-        android:id="@+id/textView"
+        android:id="@+id/theQuestion"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.72" />
 
