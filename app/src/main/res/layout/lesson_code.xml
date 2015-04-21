@@ -11,3 +11,5 @@
         android:id="@+id/codeText"
         android:layout_centerHorizontal = "true"/>
 </RelativeLayout>
+
+    <!--android:background="#2F4F4F"-->

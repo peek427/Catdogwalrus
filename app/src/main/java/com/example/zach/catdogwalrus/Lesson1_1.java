@@ -3,12 +3,14 @@ package com.example.zach.catdogwalrus;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 import android.view.View.OnClickListener;
+
 
 
 public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
@@ -105,7 +107,8 @@ public class Lesson1_1 extends ActionBarActivity implements OnClickListener {
                 case 2: lessonText.setText(getResources().getString(R.string.lesson1_1_2)); break;
                 case 3: lessonText.setText(getResources().getString(R.string.lesson1_1_3)); break;
                 case 4: lessonText.setText(getResources().getString(R.string.lesson1_1_4));
-                    codeText.setText(R.string.code1_1_1);
+                    String code1_1_1_text = getResources().getString(R.string.code1_1_1);
+                    codeText.setText(Html.fromHtml(code1_1_1_text));
                     break;
                 case 5: lessonText.setText(getResources().getString(R.string.lesson1_1_5));
                     codeText.setText(R.string.code1_1_2);
