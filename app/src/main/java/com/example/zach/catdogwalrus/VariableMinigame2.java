@@ -202,7 +202,6 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
 
 
 
-            generaterandom(); // Set the current string to an intitial value.
         }
 
         public void generaterandom() // generates random keys used in the stringbucket
