@@ -207,10 +207,10 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
         public void generaterandom() // generates random keys used in the stringbucket
         {
 
-            answer1.setBackgroundColor(Color.BLUE);
-            answer2.setBackgroundColor(Color.BLUE);
-            answer3.setBackgroundColor(Color.BLUE);
-            answer4.setBackgroundColor(Color.BLUE);
+            answer1.setBackgroundColor(Color.YELLOW);
+            answer2.setBackgroundColor(Color.YELLOW);
+            answer3.setBackgroundColor(Color.YELLOW);
+            answer4.setBackgroundColor(Color.YELLOW);
 
             Random myrandom = new Random();
             Question = myrandom.nextInt(14) + 1;
@@ -319,10 +319,10 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
         answer4 = (Button) findViewById(R.id.answer4);
         answer4.setOnClickListener(this);
 
-        answer1.setBackgroundColor(Color.BLUE);
-        answer2.setBackgroundColor(Color.BLUE);
-        answer3.setBackgroundColor(Color.BLUE);
-        answer4.setBackgroundColor(Color.BLUE);
+        answer1.setBackgroundColor(Color.YELLOW);
+        answer2.setBackgroundColor(Color.YELLOW);
+        answer3.setBackgroundColor(Color.YELLOW);
+        answer4.setBackgroundColor(Color.YELLOW);
 
         save = this.getPreferences(Context.MODE_PRIVATE); // Connects the save to the save variable
         thescore = (TextView) findViewById(R.id.Score);
@@ -363,7 +363,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                answer1.setBackgroundColor(Color.GREEN);
+
             }
             else
             {
@@ -382,7 +382,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                answer2.setBackgroundColor(Color.GREEN);
+
 
             }
             else
@@ -401,7 +401,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                answer3.setBackgroundColor(Color.GREEN);
+
 
             }
             else
@@ -421,7 +421,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Score += 100; // add to score
                 thescore.setText("" + Score); // reset score textview to new score value
                 thebucket.generaterandom();
-                answer4.setBackgroundColor(Color.GREEN);
+      
 
             }
             else
