@@ -33,6 +33,33 @@
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:id="@+id/starSet1_1"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_1_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_1_2"
+                android:layout_below="@id/starSet1_1_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_1_3"
+                android:layout_below="@id/starSet1_1_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
+
 
 
         <LinearLayout
@@ -55,6 +82,33 @@
                 android:layout_toRightOf= "@id/Ch1Les1"/>
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:id="@+id/starSet1_2"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_2_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_2_2"
+                android:layout_below="@id/starSet1_2_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_2_3"
+                android:layout_below="@id/starSet1_2_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -74,6 +128,32 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf= "@id/Ch1Les2" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:id="@+id/starSet1_3"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_3_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_3_2"
+                android:layout_below="@id/starSet1_3_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_3_3"
+                android:layout_below="@id/starSet1_3_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -94,6 +174,32 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf= "@id/Ch1Les3" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:id="@+id/starSet1_4"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_4_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_4_2"
+                android:layout_below="@id/starSet1_4_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_4_3"
+                android:layout_below="@id/starSet1_4_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -114,6 +220,32 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf= "@id/Ch1Les4" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout5"
+            android:id="@+id/starSet1_5"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_5_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_5_2"
+                android:layout_below="@id/starSet1_5_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_5_3"
+                android:layout_below="@id/starSet1_5_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -134,6 +266,32 @@
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf= "@id/Ch1Les5" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout6"
+            android:id="@+id/starSet1_6"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_6_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_6_2"
+                android:layout_below="@id/starSet1_6_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_6_3"
+                android:layout_below="@id/starSet1_6_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -164,6 +322,32 @@
                 android:layout_alignParentLeft="true"
                 android:layout_below= "@id/Ch1Les1" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout7"
+            android:id="@+id/starSet1_7"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_7_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_7_2"
+                android:layout_below="@id/starSet1_7_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_7_3"
+                android:layout_below="@id/starSet1_7_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -184,6 +368,32 @@
                 android:layout_below="@id/Ch1Les2"
                 android:layout_toRightOf= "@id/Ch1Les7" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:id="@+id/starSet1_8"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_8_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_8_2"
+                android:layout_below="@id/starSet1_8_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_8_3"
+                android:layout_below="@id/starSet1_8_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -204,6 +414,32 @@
                 android:layout_below="@id/Ch1Les3"
                 android:layout_toRightOf= "@id/Ch1Les8" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:id="@+id/starSet1_9"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_9_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_9_2"
+                android:layout_below="@id/starSet1_9_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_9_3"
+                android:layout_below="@id/starSet1_9_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -225,6 +461,32 @@
                 android:layout_below="@id/Ch1Les4"
                 android:layout_toRightOf= "@id/Ch1Les9" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout10"
+            android:id="@+id/starSet1_10"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_10_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_10_2"
+                android:layout_below="@id/starSet1_10_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_10_3"
+                android:layout_below="@id/starSet1_10_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -246,6 +508,32 @@
                 android:layout_below="@id/Ch1Les5"
                 android:layout_toRightOf= "@id/Ch1Les10"/>
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout11"
+            android:id="@+id/starSet1_11"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_11_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_11_2"
+                android:layout_below="@id/starSet1_11_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_11_3"
+                android:layout_below="@id/starSet1_11_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -266,6 +554,32 @@
                 android:layout_below="@id/Ch1Les5"
                 android:layout_toRightOf= "@id/Ch1Les11" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout12"
+            android:id="@+id/starSet1_12"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_12_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_12_2"
+                android:layout_below="@id/starSet1_12_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_12_3"
+                android:layout_below="@id/starSet1_12_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -296,6 +610,32 @@
                 android:layout_alignParentLeft="true"
                 android:layout_below= "@id/Ch1Les7" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout13"
+            android:id="@+id/starSet1_13"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_13_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_13_2"
+                android:layout_below="@id/starSet1_13_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_13_3"
+                android:layout_below="@id/starSet1_13_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -317,6 +657,32 @@
                 android:layout_below= "@id/Ch1Les8"
                 android:layout_toRightOf= "@id/Ch1Les13" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout14"
+            android:id="@+id/starSet1_14"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_14_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_14_2"
+                android:layout_below="@id/starSet1_14_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_14_3"
+                android:layout_below="@id/starSet1_14_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -338,6 +704,32 @@
                 android:layout_below= "@id/Ch1Les9"
                 android:layout_toRightOf= "@id/Ch1Les14" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout15"
+            android:id="@+id/starSet1_15"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_15_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_15_2"
+                android:layout_below="@id/starSet1_15_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_15_3"
+                android:layout_below="@id/starSet1_15_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -359,6 +751,32 @@
                 android:layout_below= "@id/Ch1Les10"
                 android:layout_toRightOf= "@id/Ch1Les15" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout16"
+            android:id="@+id/starSet1_16"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_16_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_16_2"
+                android:layout_below="@id/starSet1_16_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_16_3"
+                android:layout_below="@id/starSet1_16_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -380,6 +798,32 @@
                 android:layout_below= "@id/Ch1Les11"
                 android:layout_toRightOf= "@id/Ch1Les16" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout17"
+            android:id="@+id/starSet1_17"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_17_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_17_2"
+                android:layout_below="@id/starSet1_17_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_17_3"
+                android:layout_below="@id/starSet1_17_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
 
 
         <LinearLayout
@@ -401,567 +845,38 @@
                 android:layout_below= "@id/Ch1Les12"
                 android:layout_toRightOf= "@id/Ch1Les17" />
         </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout18"
+            android:id="@+id/starSet1_18"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_18_1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/empty_star" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_18_2"
+                android:layout_below="@id/starSet1_18_1"
+                android:background="@drawable/empty_star"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/starSet1_18_3"
+                android:layout_below="@id/starSet1_18_2"
+                android:background="@drawable/empty_star" />
+        </RelativeLayout>
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_above="@+id/linearLayout19"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/starSet1_1"
-        >
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_1_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_1_2"
-            android:layout_toRightOf="@id/starSet1_1_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_1_3"
-            android:layout_toRightOf="@id/starSet1_1_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_above="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_1"
-        android:id="@+id/starSet1_2"
-        >
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_2_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_2_2"
-            android:layout_toRightOf="@id/starSet1_2_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_2_3"
-            android:layout_toRightOf="@id/starSet1_2_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_above="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_2"
-        android:id="@+id/starSet1_3"
-        >
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_3_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_3_2"
-            android:layout_toRightOf="@id/starSet1_3_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_3_3"
-            android:layout_toRightOf="@id/starSet1_3_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_above="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_4"
-        android:id="@+id/starSet1_5"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_5_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_5_2"
-            android:layout_toRightOf="@id/starSet1_5_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_5_3"
-            android:layout_toRightOf="@id/starSet1_5_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_above="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_5"
-        android:id="@+id/starSet1_6"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_6_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_6_2"
-            android:layout_toRightOf="@id/starSet1_6_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_6_3"
-            android:layout_toRightOf="@id/starSet1_6_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_above="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_3"
-        android:id="@+id/starSet1_4"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_4_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_4_2"
-            android:layout_toRightOf="@id/starSet1_4_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_4_3"
-            android:layout_toRightOf="@id/starSet1_4_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-   <RelativeLayout
-    android:layout_width="100dp"
-    android:layout_height="30dp"
-    android:layout_below="@+id/linearLayout19"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:id="@+id/starSet1_7"
-    >
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/starSet1_7_1"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/empty_star"
-        android:layout_alignParentTop="true" />
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/starSet1_7_2"
-        android:layout_toRightOf="@id/starSet1_7_1"
-        android:background="@drawable/empty_star"
-        android:layout_alignParentTop="true" />
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/starSet1_7_3"
-        android:layout_toRightOf="@id/starSet1_7_2"
-        android:background="@drawable/empty_star"
-        android:layout_alignParentTop="true" />
-</RelativeLayout>
-
-    <RelativeLayout
-    android:layout_width="100dp"
-    android:layout_height="30dp"
-    android:layout_below="@+id/linearLayout19"
-    android:layout_toRightOf="@+id/starSet1_7"
-    android:id="@+id/starSet1_8"
-    >
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/starSet1_8_1"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/empty_star"
-        android:layout_alignParentTop="true" />
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/starSet1_8_2"
-        android:layout_toRightOf="@id/starSet1_8_1"
-        android:background="@drawable/empty_star"
-        android:layout_alignParentTop="true" />
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/starSet1_8_3"
-        android:layout_toRightOf="@id/starSet1_8_2"
-        android:background="@drawable/empty_star"
-        android:layout_alignParentTop="true" />
-</RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_8"
-        android:id="@+id/starSet1_9"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_9_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_9_2"
-            android:layout_toRightOf="@id/starSet1_9_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_9_3"
-            android:layout_toRightOf="@id/starSet1_9_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_9"
-        android:id="@+id/starSet1_10"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_10_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_10_2"
-            android:layout_toRightOf="@id/starSet1_10_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_10_3"
-            android:layout_toRightOf="@id/starSet1_10_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_10"
-        android:id="@+id/starSet1_11"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_11_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_11_2"
-            android:layout_toRightOf="@id/starSet1_11_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_11_3"
-            android:layout_toRightOf="@id/starSet1_11_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayout19"
-        android:layout_toRightOf="@+id/starSet1_11"
-        android:id="@+id/starSet1_12"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_12_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_12_2"
-            android:layout_toRightOf="@id/starSet1_12_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_12_3"
-            android:layout_toRightOf="@id/starSet1_12_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayoutFinal"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/starSet1_13"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_13_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_13_2"
-            android:layout_toRightOf="@id/starSet1_13_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_13_3"
-            android:layout_toRightOf="@id/starSet1_13_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayoutFinal"
-        android:layout_toRightOf="@+id/starSet1_13"
-        android:id="@+id/starSet1_14"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_14_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_14_2"
-            android:layout_toRightOf="@id/starSet1_14_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_14_3"
-            android:layout_toRightOf="@id/starSet1_14_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayoutFinal"
-        android:layout_toRightOf="@+id/starSet1_14"
-        android:id="@+id/starSet1_15"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_15_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_15_2"
-            android:layout_toRightOf="@id/starSet1_15_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_15_3"
-            android:layout_toRightOf="@id/starSet1_15_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayoutFinal"
-        android:layout_toRightOf="@+id/starSet1_15"
-        android:id="@+id/starSet1_16"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_16_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_16_2"
-            android:layout_toRightOf="@id/starSet1_16_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_16_3"
-            android:layout_toRightOf="@id/starSet1_16_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayoutFinal"
-        android:layout_toRightOf="@+id/starSet1_16"
-        android:id="@+id/starSet1_17"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_17_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_17_2"
-            android:layout_toRightOf="@id/starSet1_17_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_17_3"
-            android:layout_toRightOf="@id/starSet1_17_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_below="@+id/linearLayoutFinal"
-        android:layout_toRightOf="@+id/starSet1_17"
-        android:id="@+id/starSet1_18"
-        >
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_18_1"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_18_2"
-            android:layout_toRightOf="@id/starSet1_18_1"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/starSet1_18_3"
-            android:layout_toRightOf="@id/starSet1_18_2"
-            android:background="@drawable/empty_star"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
 
 </RelativeLayout>
