@@ -14,12 +14,6 @@
     <!-- Strings for code, Lesson 1.1 -->
 
     <string name="high_score">catdogwalrushighscore</string>
-    <string name="Hello_world_test">    #include &lt;iostream> \n\n
-    int main()\n
-    {\n
-	    std::cout &lt;&lt; "Hello World!\n";\n
-	    return 0;\n
-    }</string>
 
     <!-- Lesson 1.1 Strings -->
     <string name="lesson1_1_1">        Let’s talk about variables.If you have ever taken a math class you have probably seen variables of some kind. Equations, for example, are made up of variables, or letters that represent numbers you pick.$</string>
@@ -38,40 +32,43 @@
     <string name="lesson1_1_9">        Think you can match the data with the type of variable you need? Lets go!</string>
 
     <!-- Lesson 1.1 Code Strings -->
-    <string name="code1_1_1">        int main()\n
+    <string name="code1_1_1">
+        main()\n
         {\n
-	    int a, b;\n
-	    int c = 15;\n
-        }</string>
+	    &#160;&#160;&#160;&#160;&#160;int  a, b;\n
+	    &#160;&#160;&#160;&#160;&#160;int   c =  15;\n
+        }
+
+    </string>
     <string name="code1_1_2">        int main()\n
         {\n
-	    int a, b;\n
-        int c = 15;\n
-        double d = 10.2;\n
+	    &#160;&#160;&#160;&#160;&#160;int a, b;\n
+        &#160;&#160;&#160;&#160;&#160;int c = 15;\n
+        &#160;&#160;&#160;&#160;&#160;double d = 10.2;\n
         }</string>
     <string name="code1_1_3">        int main()\n
         {\n
-	    int a, b;\n
-        int c = 15;\n
-        double d = 10.2;\n
-        char e = ‘e’;\n
+	    &#160;&#160;&#160;&#160;&#160;int a, b;\n
+        &#160;&#160;&#160;&#160;&#160;int c = 15;\n
+        &#160;&#160;&#160;&#160;&#160;double d = 10.2;\n
+        &#160;&#160;&#160;&#160;&#160;char e = ‘e’;\n
         }</string>
     <string name="code1_1_4">        int main()\n
         {\n
-        int a, b;\n
-        int c = 15;\n
-        double d = 10.2;\n
-        char e = ‘E’;\n
-        string f = “This string is cool!!! ”;\n
+        &#160;&#160;&#160;&#160;&#160;int a, b;\n
+        &#160;&#160;&#160;&#160;&#160;int c = 15;\n
+        &#160;&#160;&#160;&#160;&#160;double d = 10.2;\n
+        &#160;&#160;&#160;&#160;&#160;char e = ‘E’;\n
+        &#160;&#160;&#160;&#160;&#160;string f = “This string is cool!!! ”;\n
         }</string>
     <string name="code1_1_5">        int main()\n
         {\n
-        int a;\n
-        int c = 15;\n
-        double d = 10.2;\n
-        char e = ‘E’;\n
-        string f = “This string is cool!!! ”;\n
-        bool g = true;\n
+        &#160;&#160;&#160;&#160;&#160;int a;\n
+        &#160;&#160;&#160;&#160;&#160;int c = 15;\n
+        &#160;&#160;&#160;&#160;&#160;double d = 10.2;\n
+        &#160;&#160;&#160;&#160;&#160;char e = ‘E’;\n
+        &#160;&#160;&#160;&#160;&#160;string f = “This string is cool!!! ”;\n
+        &#160;&#160;&#160;&#160;&#160;bool g = true;\n
         }</string>
 
 
@@ -117,26 +114,26 @@
         <string name = "code1_2_1">
         int main()\n
         {\n
-        int whole_num;\n
-        double decimal_num;\n
+        &#160;&#160;&#160;&#160;&#160;int whole_num;\n
+        &#160;&#160;&#160;&#160;&#160;double decimal_num;\n
         }
     </string>
-        <string name = "code1_2_2">
+    <string name = "code1_2_2">
         int main()\n
         {\n
-        int whole_num;\n
-        double decimal_num;\n\n
-        whole_num = 10 + 6;\n
-        decimal_num = 10.2 + 6.3;\n
+        &#160;&#160;&#160;&#160;&#160;int whole_num;\n
+        &#160;&#160;&#160;&#160;&#160;double decimal_num;\n\n
+        &#160;&#160;&#160;&#160;&#160;whole_num = 10 + 6;\n
+        &#160;&#160;&#160;&#160;&#160;decimal_num = 10.2 + 6.3;\n
        }
    </string>
         <string name = "code1_2_3">
         int main()\n
         {\n
-       int whole_num;\n
-       double decimal_num;\n\n
-        whole_num = 10 + 6.5;\n
-       decimal_num = 10 + 6.5;\n
+       &#160;&#160;&#160;&#160;&#160;int whole_num;\n
+       &#160;&#160;&#160;&#160;&#160;double decimal_num;\n\n
+        &#160;&#160;&#160;&#160;&#160;whole_num = 10 + 6.5;\n
+       &#160;&#160;&#160;&#160;&#160;decimal_num = 10 + 6.5;\n
         }    </string>
 
     <string name="about_us">Thanks for checking out CATDOGWALRUS! This app is meant to
@@ -146,9 +143,208 @@
     <string name="title_activity_control_minigame">ControlMinigame</string>
 
     <!-- Lesson 1.3 String -->
-    <string name = "lesson1_3_1">  Lesson 1.3 </string>
-    <string name = "lesson1_3_2">  Lesson 1.3.2 </string>
-    <string name = "lesson1_3_3">  Lesson 1.3.3 </string>
+    <string name = "lesson1_3_1">
+        Sometimes, you may only want to do certain things under special conditions.
+    </string>
+    <string name = "lesson1_3_2">
+        For example, imagine a bus driver. He should only stop at a bus stop if there are people waiting there.
+    </string>
+    <string name = "lesson1_3_3">
+        It would be a waste of time for him to stop at an empty bus stop.
+    </string>
+    <string name = "lesson1_3_4">
+        This is a control structure. It is also called a conditional statement because there is a condition that must be met (the bus stop has people at it).
+    </string>
+    <string name = "lesson1_3_5">
+        We will talk about three of the most important control structures in this lesson.
+    </string>
+    <string name = "lesson1_3_6">
+         The one you see currently is called an “if statement.”
+    </string>
+    <string name = "lesson1_3_7">
+        The line of code below this statement will only execute if the condition in the parentheses is met.
+    </string>
+    <string name = "lesson1_3_8">
+        Let’s look at a more concrete example. MyInt and MyOtherInt are variables we have declared earlier in the code.
+    </string>
+    <string name = "lesson1_3_9">
+        Notice the double == sign versus the single = sign.
+    </string>
+    <string name = "lesson1_3_10">
+        == is used to compare two values, checking whether or not they are equal, while = is used to assign a value to a variable
+    </string>
+    <string name = "lesson1_3_11">
+        When the computer reads this control structure, it checks to see if MyInt equals 5.
+        If it does equal 5, the computer sets MyOtherInt to the value of 2.
+    </string>
+    <string name = "lesson1_3_12">
+       This is a variation of the if statement, the if-else statement.
+    </string>
+    <string name = "lesson1_3_13">
+       If the condition is not met, the line of code under “else” will execute instead, so MyOtherInt will be set to 1 if MyInt does NOT equal 5.
+    </string>
+    <string name = "lesson1_3_14">
+       This control structure is called a for loop.
+    </string>
+    <string name = "lesson1_3_15">
+       For loops are used to execute a line of code MULTIPLE times.
+    </string>
+    <string name = "lesson1_3_16">
+       The parentheses for this structure is quite different from the if statement, as it contains 3 parts.
+        I will explain each part.
+    </string>
+    <string name = "lesson1_3_17">
+       First, int x=0 creates a variable that is going to be counting for us, and it starts at 0.
+    </string>
+    <string name = "lesson1_3_18">
+        Second, x &lt; 5 indicates the CONDITION that must be met in order for the loop to keep executing.    </string>
+    <string name = "lesson1_3_19">
+       In other words, if x, the counting number, is still less than 5 (&lt; means “less than”), keep executing the code.
+    </string>
+    <string name = "lesson1_3_20">
+       Third, x++ indicates what is done to the counting variable, x, at the END of each execution of the loop.
+    </string>
+    <string name = "lesson1_3_21">
+       “++” is an operator that tells a variable to increase itself by one.
+    </string>
+    <string name = "lesson1_3_22">
+       So if x is 0, running x++ will change x to 1, and then another x++ will change it to 2, etc.
+    </string>
+    <string name = "lesson1_3_23">
+       Likewise, “ x--“ exists, which will decrease the variable by 1.
+    </string>
+    <string name = "lesson1_3_24">
+       To increase or decrease a number by more than one, the syntax is “ x+=2” , or “x-=5”, or “x+=7”, etc.\nAnyway, lets look at what this for loop does.
+    </string>
+    <string name = "lesson1_3_25">
+       First, it creates a counter, x, that starts at 0.
+    </string>
+    <string name = "lesson1_3_26">
+       Then, it looks at the second part of the parentheses, the CONDITION, and checks if it is true.
+        Since x has started at 0, it is less than 5, and so the condition is met.\n The for loop now executes the code underneath it, increasing MyInt by 1.
+    </string>
+    <string name = "lesson1_3_27">
+       Now, the third part of the parentheses executes, increasing our counter, x, by 1.
+    </string>
+    <string name = "lesson1_3_28">
+       Since x is 1 (and is less than 5 still), MyInt is increased by 1 again, and x++ increases the counter by 1.
+    </string>
+    <string name = "lesson1_3_29">
+       Now, x is 2, MyInt is increased by 1 again, and x++ increases the counter by 1.
+    </string>
+    <string name = "lesson1_3_30">
+       Now, x is 3, MyInt is increased by 1 again, and x++ increases the counter by 1.
+    </string>
+    <string name = "lesson1_3_31">
+       Now, x is 4, MyInt is increased by 1 again, and x++ increases the counter by 1.
+    </string>
+    <string name = "lesson1_3_32">
+       Now, x is 5. The computer sees that 5 is NOT less than 5, which is the condition that must be met for the loop to continue.
+    </string>
+    <string name = "lesson1_3_33">
+       Since this condition is NOT met, the for loop finally ends, and the line of code below it is no longer executed.\n
+        So, this line of code executed 5 times total.
+    </string>
+    <string name = "lesson1_3_34">
+       While many different conditions can be used in a for loop, this is the most widely used version.\n
+        Use it when you want to perform a line of code a certain number of times, and modify the “5” with the number of times you want it to execute.
+    </string>
+    <string name = "lesson1_3_35">
+        Finally, we have the while loop.    </string>
+    <string name = "lesson1_3_36">
+        The while loop is similar to the for loop in that it executes a line of code multiple times.\n
+        However, it doesnt create a counter: it uses a variable you have made earlier in the program.
+    </string>
+    <string name = "lesson1_3_37">
+        So, we made MyInt earlier, and we are telling the While Loop to keep executing WHILE this condition in the parentheses is met.    </string>
+    <string name = "lesson1_3_38">
+        So, WHILE MyInt is greater than zero, or in other words, is a positive number...    </string>
+    <string name = "lesson1_3_39">
+        Decrease it by 1.
+    </string>
+    <string name = "lesson1_3_40">
+    This will decrease MyInt multiple times until it is no longer greater than 0.
+    </string>
+    <string name = "lesson1_3_41">
+       Once MyInt gets to 0, the condition check fails, and the line of code will no longer execute.
+    </string>
+    <string name = "lesson1_3_42">
+       It is important to avoid INFINITE loops.
+    </string>
+    <string name = "lesson1_3_43">
+      In this example, MyInt starts at 3.
+    </string>
+     <string name = "lesson1_3_44">
+      The while loop will run as long as MyInt is less than 5.
+    </string>
+     <string name = "lesson1_3_45">
+      But, each time the loop runs, it decreases MyInt.
+    </string>
+     <string name = "lesson1_3_46">
+      So MyInt will ALWAYS be less than 5. (2 is less than 5, 1 is less than 5, 0 is less than 5, -1 is less than 5.. etc).
+    </string>
+     <string name = "lesson1_3_47">
+      Therefore, your program will never end because this line of code will run endlessly.
+    </string>
+     <string name = "lesson1_3_48">
+      In summary, the three major structures we discussed are the if statement, the for loop, and the while loop.
+    </string>
+     <string name = "lesson1_3_49">
+      The if statement runs ONE TIME, and only runs if a condition is met.
+    </string>
+     <string name = "lesson1_3_50">
+      The if-else statement is the same as the if statement, except it tells the computer to do something else if the condition fails.
+    </string>
+     <string name = "lesson1_3_51">
+     The for loop and the while loop both run a line of code MULTIPLE times, but in different ways.
+    </string>
+     <string name = "lesson1_3_52">
+      In this game, you will put together control structures that each achieve a specific goal.
+Good luck!
+     </string>
+
+    <!-- Lesson 1.3 Code String -->
+    <string name= "code1_3_1">
+        if(people are waiting at the bus stop)\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;stop;\n
+        }
+    </string>
+    <string name= "code1_3_2">
+        if (MyInt == 5)\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;MyOtherInt = 2;\n
+        }
+    </string>
+    <string name="code1_3_3">
+        if (MyInt == 5)\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;MyOtherInt = 2;\n
+        }\n
+        else\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;MyOtherInt = 1;\n
+        }
+    </string>
+    <string name="code1_3_4">
+        for (int x = 0; x &lt; 5; x++)\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;MyInt++;\n
+        }
+    </string>
+    <string name="code1_3_5">
+        while (MyInt &gt; 0)\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;MyInt--;\n
+        }
+    </string>
+    <string name="code_1_3_6">
+        myInt = 3;\n
+        while (myInt &lt; 5)\n
+        {\n
+        &#160;&#160;&#160;&#160;&#160;myInt--;\n
+        }
+    </string>
 
 
     <!-- Control minigame strings -->
