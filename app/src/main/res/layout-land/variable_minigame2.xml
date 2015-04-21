@@ -1,69 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1"
-    android:background="@drawable/game2background">
 
-    <fragment
-        android:name="com.example.zach.catdogwalrus.Minigame_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        tools:layout="@layout/minigame_fragment_layout"
-        android:id="@+id/minifrag"/>
 
-    <TextView
-        android:layout_width="49dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="30"
-        android:id="@+id/Timer"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#ffff7f78"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/game2background"
+tools:context="com.example.zach.catdogwalrus.Score_alert_fragment_variableminigame">>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Timer"
+    android:text="30"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:textSize="30sp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="125dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/Timer"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="Questions go here."
+    android:id="@+id/theQuestion"
+    android:textSize="24sp"
     />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_marginBottom="10dp"
-        android:text="Questions go here. "
-        android:id="@+id/theQuestion"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.72" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text=" "
-        android:id="@+id/answer1"
-        android:layout_gravity="center_horizontal" />
+<fragment
+    android:name="com.example.zach.catdogwalrus.Minigame_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout="@layout/minigame_fragment_layout"
+    android:id="@+id/minifrag"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text=" "
-        android:id="@+id/answer2"
-        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/theQuestion"
+        android:layout_centerHorizontal="true">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text=" "
-        android:id="@+id/answer3"
-        android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/answer1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+             />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text=" "
-        android:id="@+id/answer4"
-        android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/answer2"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/answer1"
+             />
 
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/answer3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_below = "@+id/answer1" />
 
-</LinearLayout>
+        <Button
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/answer4"
+            android:layout_gravity="center_horizontal"
+            android:layout_below = "@+id/answer1"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/answer1"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
