@@ -2,40 +2,40 @@
 
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/game2background"
+tools:context="com.example.zach.catdogwalrus.Score_alert_fragment_variableminigame">>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Timer"
+    android:text="30"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:textSize="30sp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="125dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/Timer"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="Questions go here."
+    android:id="@+id/theQuestion"
+    android:textSize="24sp"
+    />
+
+
+<fragment
+    android:name="com.example.zach.catdogwalrus.Minigame_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/game2background"
-    tools:context="com.example.zach.catdogwalrus.Score_alert_fragment_variableminigame">>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Timer"
-        android:text="30"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="125dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/Timer"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="Questions go here."
-        android:id="@+id/theQuestion"
-        android:textSize="24sp"
-        />
-
-
-    <fragment
-        android:name="com.example.zach.catdogwalrus.Minigame_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/minigame_fragment_layout"
-        android:id="@+id/minifrag"/>
+    tools:layout="@layout/minigame_fragment_layout"
+    android:id="@+id/minifrag"/>
 
     <RelativeLayout
         android:layout_width="500dp"
@@ -50,7 +50,7 @@
             android:id="@+id/answer1"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="50dp"
-            />
+             />
 
         <Button
             android:layout_width="225dp"
@@ -60,7 +60,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/answer1"
-            />
+             />
 
         <Button
             android:layout_width="225dp"

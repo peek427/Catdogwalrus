@@ -226,6 +226,40 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((54 - 35) + 1) + 35; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((54 - 35) + 1) + 35; //Random wrong answer
+
+                myrandom = new Random();
+                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+                {
+                    correct = 1;
+                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+                {
+                    correct = 2;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+                {
+                    correct = 3;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else
+                {
+                    correct = 4;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                }
             }
             else if(Question <= 10)
             {
@@ -237,6 +271,39 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((94 - 75) + 1) + 75; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((94 - 75) + 1) + 75; //Random wrong answer
+                myrandom = new Random();
+                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+                {
+                    correct = 1;
+                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+                {
+                    correct = 2;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+                {
+                    correct = 3;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else
+                {
+                    correct = 4;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                }
             }
             else if(Question == 11 || Question == 12)
             {
@@ -247,6 +314,40 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
+
+                myrandom = new Random();
+                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+                {
+                    correct = 1;
+                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+                {
+                    correct = 2;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+                {
+                    correct = 3;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else
+                {
+                    correct = 4;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                }
             }
             else if(Question == 13)
             {
@@ -256,6 +357,40 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
+
+                myrandom = new Random();
+                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+                {
+                    correct = 1;
+                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+                {
+                    correct = 2;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+                {
+                    correct = 3;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else
+                {
+                    correct = 4;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                }
             }
             else if(Question == 14)
             {
@@ -265,40 +400,40 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
                 Wrong2 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
                 myrandom = new Random();
                 Wrong3 = myrandom.nextInt((110 - 98) + 1) + 98; //Random wrong answer
-            }
 
-            myrandom = new Random();
-            if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
-            {
-                correct = 1;
-                answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
-            }
-            else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
-            {
-                correct = 2;
-                answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
-            }
-            else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
-            {
-                correct = 3;
-                answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
-                answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
-            }
-            else
-            {
-                correct = 4;
-                answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
-                answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
-                answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
-                answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                myrandom = new Random();
+                if((myrandom.nextInt((4 - 1) + 1) + 1)== 1)
+                {
+                    correct = 1;
+                    answer1.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 2)
+                {
+                    correct = 2;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else if((myrandom.nextInt((4 - 1) + 1) + 1)== 3)
+                {
+                    correct = 3;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                    answer4.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                }
+                else
+                {
+                    correct = 4;
+                    answer1.setText(thebucket.stringmap.get(thebucket.Wrong1));
+                    answer2.setText(thebucket.stringmap.get(thebucket.Wrong2));
+                    answer3.setText(thebucket.stringmap.get(thebucket.Wrong3));
+                    answer4.setText(thebucket.stringmap.get(thebucket.CorrectAnswer));
+                }
             }
 
         }//End of GenerateRandom
