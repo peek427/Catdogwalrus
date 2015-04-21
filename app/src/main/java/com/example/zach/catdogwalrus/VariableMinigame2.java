@@ -205,7 +205,7 @@ public class VariableMinigame2 extends Minigame implements OnClickListener{
             answer2.setBackgroundColor(Color.BLUE);
             answer3.setBackgroundColor(Color.BLUE);
             answer4.setBackgroundColor(Color.BLUE);
-            
+
             Random myrandom = new Random();
             Question = myrandom.nextInt(14) + 1;
 
